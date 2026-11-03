@@ -58,7 +58,6 @@
   width: 180px;
   height: auto;
   margin: 0 auto 35px;
-  mix-blend-mode: multiply;
 }
 .landing-intro-title {
   font-family: var(--font-editorial), serif;
