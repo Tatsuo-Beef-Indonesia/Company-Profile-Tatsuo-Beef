@@ -6,6 +6,19 @@
   isolation: isolate;
   overflow: hidden;
   overscroll-behavior: none;
+  /* Also fail open if hydration/chunk loading never reaches the React effect. */
+  animation: landing-intro-unblock 0s 8s forwards;
+}
+@keyframes landing-intro-unblock {
+  to {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+@keyframes landing-hero-unblock {
+  to {
+    visibility: visible;
+  }
 }
 .landing-intro-panel {
   position: absolute;
@@ -122,6 +135,7 @@
 }
 .home-v2[data-intro="loading"] .hero-copy {
   visibility: hidden;
+  animation: landing-hero-unblock 0s 8s forwards;
 }
 @media (max-width: 600px) {
   .landing-intro-header {

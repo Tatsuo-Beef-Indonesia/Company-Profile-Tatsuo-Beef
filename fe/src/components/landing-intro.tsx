@@ -20,6 +20,7 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
     }
     let active = true;
     let exiting = false;
+    let revealed = false;
     let exitTimeline: gsap.core.Timeline | undefined;
     const timers: ReturnType<typeof setTimeout>[] = [];
     const previousOverflow = document.body.style.overflow;
@@ -32,9 +33,23 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
     ).matches;
     const startedAt = performance.now();
     const progress = { value: 0 };
+    let completed = 0;
     const count = element.querySelector(".landing-intro-count");
     const line = element.querySelector(".landing-intro-progress");
-    const setProgress = line ? gsap.quickSetter(line, "scaleX") : null;
+    const reveal = () => {
+      if (revealed) return;
+      revealed = true;
+      if (main) main.inert = previousInert;
+      onReveal();
+    };
+    const finish = () => {
+      if (!active) return;
+      document.body.style.overflow = previousOverflow;
+      reveal();
+      setVisible(false);
+    };
+    // Independent of asset promises and GSAP's animation ticker.
+    const deadline = setTimeout(finish, 6500);
     const context = gsap.context(() => {
       if (!reduced) {
         gsap.from(".landing-intro-logo", { opacity: 0, y: 12, duration: 0.7 });
@@ -67,18 +82,32 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
       if (!active) return;
       const label = String(Math.round(progress.value)).padStart(3, "0");
       if (count && count.textContent !== label) count.textContent = label;
-      setProgress?.(progress.value / 100);
+      if (line instanceof HTMLElement) {
+        line.style.transform = `scaleX(${progress.value / 100})`;
+      }
     };
+    progress.value = 1;
+    update();
+    const progressTimer = setInterval(() => {
+      if (!active || exiting) return;
+      const elapsed = performance.now() - startedAt;
+      const target = Math.max(
+        progress.value,
+        Math.min(90, (elapsed / 3000) * 90),
+        (completed / 3) * 94,
+      );
+      progress.value = Math.min(
+        target,
+        progress.value + Math.max(0.5, (target - progress.value) * 0.08),
+      );
+      update();
+    }, 80);
     const exit = () => {
       if (!active || exiting || !element.isConnected) return;
       exiting = true;
       gsap.killTweensOf(progress);
       const timeline = gsap.timeline({
-        onComplete: () => {
-          if (!active) return;
-          document.body.style.overflow = previousOverflow;
-          setVisible(false);
-        },
+        onComplete: finish,
       });
       exitTimeline = timeline;
       context.add(() => {
@@ -95,10 +124,7 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
               duration: reduced ? 0.15 : 0.35,
             },
           )
-          .call(() => {
-            if (main) main.inert = previousInert;
-            onReveal();
-          })
+          .call(reveal)
           .to(
             ".landing-intro-panel-top",
             {
@@ -124,23 +150,20 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
       ".v2-original-hero .hero-image",
     );
     const logo = element.querySelector<HTMLImageElement>(".landing-intro-logo");
-    const tasks = [document.fonts.ready, hero?.decode(), logo?.decode()];
-    let completed = 0;
+    // Convert synchronous decode errors into settled promises too. Older mobile
+    // browsers may not implement decode or the Font Loading API.
+    const tasks = [
+      () => document.fonts?.ready,
+      () => hero?.decode?.(),
+      () => logo?.decode?.(),
+    ];
     const assets = Promise.allSettled(
       tasks.map((task) =>
-        Promise.resolve(task).finally(() => {
-          completed += 1;
-          if (!active || exiting) return;
-          gsap.to(progress, {
-            value: (completed / tasks.length) * 94,
-            duration: reduced
-              ? 0
-              : Math.max(0.35, (2800 - (performance.now() - startedAt)) / 1000),
-            overwrite: true,
-            ease: "power1.inOut",
-            onUpdate: update,
-          });
-        }),
+        Promise.resolve()
+          .then(task)
+          .finally(() => {
+            completed += 1;
+          }),
       ),
     );
     void Promise.all([
@@ -149,6 +172,8 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
     ]).then(exit);
     return () => {
       active = false;
+      clearTimeout(deadline);
+      clearInterval(progressTimer);
       timers.forEach(clearTimeout);
       exitTimeline?.kill();
       gsap.killTweensOf(progress);
