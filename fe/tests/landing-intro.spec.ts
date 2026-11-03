@@ -20,7 +20,9 @@ test("intro progresses and releases mobile page when assets never decode", async
   );
   await expect(page.locator(".landing-intro")).toHaveCount(0);
   await expect
-    .poll(() => page.locator("#main").evaluate((el) => el.inert))
+    .poll(() =>
+      page.locator("#main").evaluate((el) => el instanceof HTMLElement && el.inert),
+    )
     .toBe(false);
   await expect
     .poll(() => page.evaluate(() => document.body.style.overflow))

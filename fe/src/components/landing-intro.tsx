@@ -152,7 +152,7 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
     const logo = element.querySelector<HTMLImageElement>(".landing-intro-logo");
     // Convert synchronous decode errors into settled promises too. Older mobile
     // browsers may not implement decode or the Font Loading API.
-    const tasks = [
+    const tasks: Array<() => Promise<unknown> | undefined> = [
       () => document.fonts?.ready,
       () => hero?.decode?.(),
       () => logo?.decode?.(),
