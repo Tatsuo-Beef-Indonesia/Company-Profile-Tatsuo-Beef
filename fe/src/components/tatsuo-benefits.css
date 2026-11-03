@@ -1,0 +1,246 @@
+.tatsuo-benefits {
+  color: var(--ink);
+  background-color: #fff;
+  background-image: var(--white-grain, none);
+  background-size: 160px 160px;
+  padding-block: 0;
+}
+.tatsuo-benefits-inner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 0 0 40px;
+  background: transparent;
+}
+.tatsuo-promise-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tatsuo-promise-list {
+  display: flex;
+  flex-direction: column;
+}
+.tatsuo-promise-row {
+  border-bottom: 1px solid #d9cdb9;
+  flex: 1 0 auto;
+  padding: 34px 34px 32px 24px;
+  transition:
+    background 0.45s ease,
+    color 0.45s ease;
+}
+.tatsuo-promise-row.is-active {
+  background: var(--red);
+  color: #fff7e9;
+}
+.tatsuo-promise-row h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.tatsuo-promise-row button {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 28px;
+  width: 100%;
+  text-align: left;
+  align-items: start;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+.tatsuo-promise-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+  background: var(--red);
+  color: #fff7e9;
+}
+.is-active .tatsuo-promise-toggle {
+  background: #20211e;
+}
+.tatsuo-promise-toggle i {
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background: currentColor;
+}
+.tatsuo-promise-toggle i:last-child {
+  transform: rotate(90deg);
+  transition: transform 0.4s ease;
+}
+.is-active .tatsuo-promise-toggle i:last-child {
+  transform: rotate(0);
+}
+.tatsuo-promise-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.tatsuo-promise-title {
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(23px, 2.3vw, 34px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.8px;
+}
+.tatsuo-promise-script {
+  font-family: var(--font-promise-script), cursive;
+  font-weight: 400;
+  font-size: clamp(35px, 3.5vw, 54px);
+  line-height: 1.05;
+  color: var(--red);
+}
+.is-active .tatsuo-promise-script {
+  color: #fff7e9;
+}
+.tatsuo-promise-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.5s ease,
+    opacity 0.35s ease;
+}
+.is-active .tatsuo-promise-answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.tatsuo-promise-answer > div {
+  overflow: hidden;
+}
+.tatsuo-promise-answer p {
+  padding-top: 19px;
+  margin-left: 58px;
+  max-width: 410px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.tatsuo-promise-collage {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+.tatsuo-promise-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  flex-shrink: 0;
+}
+.tatsuo-promise-tile {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #b92127;
+}
+.tatsuo-promise-tile:nth-child(even) {
+  background: #c9ae73;
+}
+.tatsuo-promise-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tatsuo-promise-main-photo {
+  flex: 1;
+  min-height: 320px;
+  position: relative;
+}
+.tatsuo-promise-main-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tatsuo-promise-signoff {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 32px 20px;
+  border-bottom: 1px solid #d9cdb9;
+}
+.tatsuo-promise-signoff > span {
+  font-family: var(--font-promise-script), cursive;
+  font-size: 36px;
+  color: var(--red);
+}
+.tatsuo-promise-signoff > strong {
+  font-family: var(--font-display), serif;
+  color: var(--ink);
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.tatsuo-promise-row button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 8px;
+}
+@media (max-width: 1100px) {
+  .tatsuo-promise-row {
+    padding: 28px 24px 28px 20px;
+  }
+  .tatsuo-promise-row button {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .tatsuo-promise-toggle {
+    width: 26px;
+    height: 26px;
+  }
+  .tatsuo-promise-toggle i {
+    top: 12px;
+  }
+  .tatsuo-promise-answer p {
+    margin-left: 46px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .tatsuo-benefits-inner {
+    padding-bottom: 28px;
+  }
+  .tatsuo-benefits-inner {
+    width: 100%;
+  }
+  .tatsuo-promise-layout {
+    grid-template-columns: 1fr;
+  }
+  .tatsuo-promise-row {
+    padding: 26px 24px;
+  }
+  .tatsuo-promise-title {
+    font-size: 26px;
+  }
+  .tatsuo-promise-script {
+    font-size: clamp(37px, 8vw, 48px);
+  }
+  .tatsuo-promise-main-photo {
+    min-height: 0;
+    aspect-ratio: 1.18;
+  }
+  .tatsuo-promise-answer p {
+    max-width: 540px;
+  }
+  .tatsuo-promise-signoff {
+    padding-block: 25px;
+  }
+  .tatsuo-promise-signoff > span {
+    font-size: 30px;
+  }
+  .tatsuo-promise-signoff > strong {
+    font-size: 28px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tatsuo-promise-row,
+  .tatsuo-promise-answer,
+  .tatsuo-promise-toggle i:last-child {
+    transition: none;
+  }
+}
