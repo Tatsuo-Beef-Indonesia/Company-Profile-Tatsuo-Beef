@@ -178,7 +178,7 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
       <div className="landing-intro-content">
         <Image
           className="landing-intro-logo"
-          src="/images/logo-original.jpg"
+          src="/images/logo-horizontal-transparent.svg"
           alt="Tatsuo Beef"
           width={1600}
           height={703}
