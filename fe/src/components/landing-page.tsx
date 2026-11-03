@@ -61,7 +61,7 @@ const faqs = [
   ],
   [
     "Bagaimana dengan wilayah dan jadwal pengiriman?",
-    "Tatsuo Beef berlokasi di Kartasura, Sukoharjo, Jawa Tengah. Untuk memastikan jangkauan, biaya, dan jadwal pengiriman ke lokasi Anda, silakan berkonsultasi langsung dengan tim kami.",
+    "Tatsuo Beef memiliki kantor perwakilan di Solo serta gudang dan produksi di Jakarta. Untuk memastikan jangkauan, biaya, dan jadwal pengiriman ke lokasi Anda, silakan berkonsultasi langsung dengan tim kami.",
   ],
 ];
 

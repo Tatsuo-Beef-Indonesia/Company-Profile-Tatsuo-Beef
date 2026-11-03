@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Arrow, Asterisk } from "./icons";
 import MobileOptimizedImage from "./mobile-optimized-image";
-import { whatsapp } from "@/lib/company";
+import { company, whatsapp } from "@/lib/company";
 
 const missions = [
   {
@@ -362,8 +362,22 @@ export default function AboutExperience() {
             <span>
               PT. Tatsuo Beef Indonesia
               <br />
-              Kartasura, Sukoharjo
+              Solo · Jakarta
             </span>
+          </div>
+          <div className="about-location-list">
+            {Object.values(company.locations).map((location) => (
+              <a
+                key={location.city}
+                href={location.maps}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>{location.city}</span>
+                <small>{location.role}</small>
+                <Arrow diagonal />
+              </a>
+            ))}
           </div>
         </div>
         <div className="tatsuo-about-story-copy tatsuo-about-reveal">

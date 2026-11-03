@@ -112,7 +112,10 @@ export default function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {sales.phone} <span>— {sales.name}</span>
+                    {sales.phone}{" "}
+                    <span>
+                      — {sales.name} · {sales.role}
+                    </span>
                   </a>
                 ))}
               </div>
@@ -127,14 +130,25 @@ export default function SiteFooter() {
             <div className="footer-contact-item">
               <ContactIcon type="location" />
               <div>
-                <h3>Lokasi</h3>
-                <a
-                  href={company.maps}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {company.address}
-                </a>
+                <h3>Temukan Kami</h3>
+                {Object.values(company.locations).map((location) => (
+                  <a
+                    className="footer-location-link"
+                    key={location.city}
+                    href={location.maps}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${location.city} — ${location.role}, buka di Google Maps`}
+                  >
+                    <strong>
+                      {location.city} <span>↗</span>
+                    </strong>
+                    <small>{location.role}</small>
+                    <span className="footer-location-address">
+                      {location.address}
+                    </span>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

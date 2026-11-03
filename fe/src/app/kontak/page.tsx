@@ -5,7 +5,7 @@ import "./contact.css";
 export const metadata: Metadata = {
   title: "Hubungi Kami — Tatsuo Beef",
   description:
-    "Diskusikan kebutuhan daging dan bahan pangan usaha Anda dengan tim Tatsuo Beef. Hubungi Izzud atau Kriss melalui WhatsApp, email, atau temukan alamat kami di Kartasura.",
+    "Hubungi Tatsuo Beef untuk kebutuhan daging dan bahan pangan usaha Anda. Temukan kantor perwakilan kami di Solo serta gudang dan produksi di Jakarta.",
   alternates: { canonical: "/kontak" },
 };
 

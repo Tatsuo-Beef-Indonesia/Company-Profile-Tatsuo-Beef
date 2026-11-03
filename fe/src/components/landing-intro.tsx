@@ -196,7 +196,7 @@ export default function LandingIntro({ onReveal }: { onReveal: () => void }) {
         className="landing-intro-header landing-intro-detail"
         aria-hidden="true"
       >
-        <span>SOLO, INDONESIA</span>
+        <span>SOLO · JAKARTA, INDONESIA</span>
         <span>EST. 2023</span>
       </div>
       <div className="landing-intro-cut" aria-hidden="true" />

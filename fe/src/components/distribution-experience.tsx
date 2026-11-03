@@ -658,12 +658,12 @@ export default function DistributionExperience() {
             </span>
           </a>
           <a
-            href={company.maps}
+            href={company.locations.jakarta.maps}
             target="_blank"
             rel="noopener noreferrer"
             className="dist-address"
           >
-            Kartasura, Sukoharjo · Jawa Tengah <Arrow diagonal />
+            Jakarta · Warehouse &amp; Production <Arrow diagonal />
           </a>
         </div>
       </section>

@@ -61,8 +61,8 @@ export function DistributionNetwork() {
           />
         </svg>
         <div className="network-origin">
-          <span>SOLO</span>
-          <small>OUR STARTING POINT</small>
+          <span>JAKARTA</span>
+          <small>WAREHOUSE &amp; PRODUCTION</small>
         </div>
         {nodes.map((node, i) => (
           <button

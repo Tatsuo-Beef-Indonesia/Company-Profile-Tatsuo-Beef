@@ -174,7 +174,9 @@ export default function ContactExperience() {
                 key={person.number}
               >
                 <div className="contact-person-top">
-                  <span>0{index + 1} / TIM SALES</span>
+                  <span>
+                    0{index + 1} / {person.role.toUpperCase()}
+                  </span>
                   <a
                     href={`tel:+${person.number}`}
                     aria-label={`Telepon ${person.name}`}
@@ -313,55 +315,88 @@ export default function ContactExperience() {
       >
         <div className="contact-location-top contact-reveal">
           <span className="contact-section-index">02 — TEMUKAN KAMI</span>
-          <h2 id="contact-location-title">
-            Berawal di Kartasura.
-            <br />
-            <em>Terhubung dengan Anda.</em>
-          </h2>
+          <div className="contact-location-heading">
+            <h2 id="contact-location-title">
+              Dua tempat.
+              <br />
+              <em>Satu komitmen.</em>
+            </h2>
+            <p className="contact-location-intro">
+              Kantor perwakilan di Solo. Gudang dan produksi di Jakarta.
+              Terhubung untuk kebutuhan bisnis Anda.
+            </p>
+          </div>
+        </div>
+        <div
+          className="contact-location-route contact-reveal"
+          aria-hidden="true"
+        >
+          <span>SOLO</span>
+          <i />
+          <span>JAKARTA</span>
         </div>
         <div className="contact-location-grid">
-          <div className="contact-location-photo contact-reveal">
-            <MobileOptimizedImage
-              src="/images/distribution/dock-restored-v1.webp"
-              alt="Area fasilitas distribusi dalam dokumentasi Tatsuo Beef"
-              fill
-              sizes="(max-width:760px) calc(100vw - 40px), 58vw"
-            />
-            <span>DI BALIK SETIAP PENGIRIMAN.</span>
-          </div>
-          <div className="contact-address-card contact-reveal">
-            <div className="contact-address-head">
-              <span>ALAMAT KAMI</span>
-              <svg
-                viewBox="0 0 32 32"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                aria-hidden="true"
-              >
-                <path d="M26 13c0 8-10 16-10 16S6 21 6 13a10 10 0 1 1 20 0Z" />
-                <circle cx="16" cy="13" r="3" />
-              </svg>
-            </div>
-            <h3>
-              Tatsuo Beef
-              <br />
-              Indonesia.
-            </h3>
-            <address>{company.address}</address>
-            <a
-              className="contact-map-link"
-              href={company.maps}
-              target="_blank"
-              rel="noopener noreferrer"
+          {Object.entries(company.locations).map(([key, location], index) => (
+            <article
+              key={key}
+              className={`contact-address-card contact-address-card--${key} contact-reveal`}
+              aria-labelledby={`contact-location-${key}`}
             >
-              Buka di Google Maps <Arrow diagonal />
-            </a>
-            <div className="contact-address-foot">
-              <span>KARTASURA · SUKOHARJO</span>
-              <span>57169</span>
-            </div>
-          </div>
+              <div
+                className={`contact-location-photo contact-location-photo--${key}`}
+              >
+                <MobileOptimizedImage
+                  src={
+                    key === "jakarta"
+                      ? "/images/distribution/dock-restored-v1.webp"
+                      : "/images/distribution/delivery-restored-v1.webp"
+                  }
+                  alt={
+                    key === "jakarta"
+                      ? "Dokumentasi fasilitas distribusi Tatsuo Beef"
+                      : "Dokumentasi kendaraan pengiriman Tatsuo Beef"
+                  }
+                  fill
+                  sizes="(max-width:760px) calc(100vw - 40px), 50vw"
+                />
+                <span>
+                  {key === "jakarta"
+                    ? "DI BALIK SETIAP PASOKAN."
+                    : "RUANG UNTUK TERHUBUNG."}
+                </span>
+              </div>
+              <div className="contact-address-content">
+                <div className="contact-address-head">
+                  <span>
+                    {String(index + 1).padStart(2, "0")} / {location.role}
+                  </span>
+                  <span className="contact-location-dot" aria-hidden="true" />
+                </div>
+                <h3 id={`contact-location-${key}`}>
+                  {location.city}
+                  <span>.</span>
+                </h3>
+                <p className="contact-location-role">{location.label}</p>
+                <p className="contact-location-description">
+                  {location.description}
+                </p>
+                <address>{location.address}</address>
+                <a
+                  className="contact-map-link"
+                  href={location.maps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Buka lokasi ${location.city} di Google Maps`}
+                >
+                  Lihat lokasi {location.city} <Arrow diagonal />
+                </a>
+                <div className="contact-address-foot">
+                  <span>{location.area}</span>
+                  <span>{location.postcode}</span>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
       <section

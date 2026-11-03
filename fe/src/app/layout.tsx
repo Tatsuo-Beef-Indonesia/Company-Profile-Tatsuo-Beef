@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Mitra pengadaan daging sapi dan ayam untuk bisnis kuliner Anda. Temukan pilihan daging premium bersama PT. Tatsuo Beef Indonesia, Sukoharjo.",
+    "Mitra pengadaan daging sapi dan ayam untuk bisnis kuliner Anda. Tatsuo Beef hadir dengan kantor perwakilan di Solo serta gudang dan produksi di Jakarta.",
   openGraph: {
     title: "Tatsuo Beef — Good Meat. Great Partnership.",
     description: "Pilihan daging yang baik. Awal kemitraan yang lebih baik.",
