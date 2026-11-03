@@ -14,6 +14,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  // Bound build workers to the shared hosting's available CPU/RAM budget.
+  experimental: { cpus: 2 },
   turbopack: {
     rules: {
       "*.css": {
