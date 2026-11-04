@@ -700,33 +700,108 @@ export default function AboutExperience() {
       </section>
 
       <section
-        className="container tatsuo-about-principles"
+        className="tatsuo-about-principles"
         aria-labelledby="about-values-heading"
       >
-        <header className="tatsuo-about-reveal">
-          <span className="tatsuo-about-label">
-            03 / NILAI YANG KAMI PEGANG
-          </span>
-          <h2 id="about-values-heading">
-            Cara kami bekerja.
-            <br />
-            <em>Alasan Anda percaya.</em>
-          </h2>
-        </header>
-        <div className="tatsuo-about-principles-grid">
-          {principles.map(([title, text], index) => (
-            <article
-              className="tatsuo-about-principle tatsuo-about-reveal"
-              key={title}
-            >
-              <span>0{index + 1}</span>
-              <h3>
-                {title}
-                <em>.</em>
-              </h3>
-              <p>{text}</p>
-            </article>
-          ))}
+        <div className="container about-prima-layout">
+          <header className="about-prima-sticky">
+            <span className="tatsuo-about-label">05 / NILAI PERUSAHAAN</span>
+            <div className="tatsuo-about-prima-heading">
+              <Image
+                src="/images/prima-values-hd.webp"
+                alt="Prima, nilai perusahaan Tatsuo Beef"
+                width={2048}
+                height={768}
+                sizes="220px"
+              />
+              <h2 id="about-values-heading">
+                Lima nilai.
+                <br />
+                Satu cara
+                <br />
+                <em>bekerja.</em>
+              </h2>
+            </div>
+            <nav className="about-prima-nav" aria-label="Jelajahi nilai PRIMA">
+              {principles.map(([letter, title], index) => (
+                <a
+                  key={letter}
+                  href={`#nilai-${letter.toLowerCase()}`}
+                  aria-label={`Nilai ${title}`}
+                  aria-current={activePrima === index ? "location" : undefined}
+                >
+                  {letter}
+                </a>
+              ))}
+            </nav>
+            <span className="about-prima-progress" aria-hidden="true">
+              <span
+                style={{
+                  transform: `scaleX(${(activePrima + 1) / principles.length})`,
+                }}
+              />
+            </span>
+          </header>
+          <div className="tatsuo-about-principles-grid">
+            {principles.map(([letter, title, text], index) => (
+              <article
+                id={`nilai-${letter.toLowerCase()}`}
+                className={`tatsuo-about-principle${activePrima === index ? " is-active" : ""}`}
+                key={title}
+              >
+                <span className="about-prima-count">0{index + 1} / 05</span>
+                <span className="tatsuo-about-prima-letter" aria-hidden="true">
+                  {letter}
+                </span>
+                <div className="about-prima-value-copy">
+                  <h3>
+                    {title}
+                    <em>.</em>
+                  </h3>
+                  <p>{text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="container tatsuo-about-people"
+        aria-labelledby="about-people-heading"
+      >
+        <figure className="about-people-photo">
+          <MobileOptimizedImage
+            src="/images/craft-chef-plating-v1.webp"
+            alt="Ilustrasi ketelitian dan keterampilan dalam menyajikan makanan"
+            width={1200}
+            height={1500}
+            sizes="(max-width: 760px) 100vw, 42vw"
+          />
+          <figcaption>
+            SELALU PRIMA. DALAM PELAYANAN &amp; KINERJA TIM.
+          </figcaption>
+        </figure>
+        <div className="about-people-content">
+          <div className="tatsuo-about-people-heading">
+            <span className="tatsuo-about-label">
+              06 / MASA DEPAN TATSUO &amp; TALENTA SDM
+            </span>
+            <h2 id="about-people-heading">
+              Bisnis yang baik.
+              <br />
+              <em>Dimulai dari manusianya.</em>
+            </h2>
+          </div>
+          <div className="tatsuo-about-people-grid">
+            {peoplePrinciples.map(([title, text], index) => (
+              <article key={title}>
+                <span>0{index + 1}</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
