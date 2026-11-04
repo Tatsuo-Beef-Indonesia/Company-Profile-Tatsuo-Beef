@@ -7,10 +7,10 @@ export const company = {
       role: "Representative Office",
       label: "Kantor perwakilan",
       address:
-        "Jl. Kurma, Dregan RT03/RW06, Pabelan, Kartasura, Sukoharjo, Jawa Tengah 57169",
-      maps: "https://www.google.com/maps/search/?api=1&query=Jl.+Kurma+Dregan+Pabelan+Kartasura+Sukoharjo",
-      area: "Kartasura, Sukoharjo",
-      postcode: "57169",
+        "Toko Bos Daging Solo, Jl. Jaya Wijaya No.100, Mojosongo, Jebres, Kota Surakarta, Jawa Tengah 57127",
+      maps: "https://maps.app.goo.gl/U1Zr9fGv4ip2jHNu5",
+      area: "Mojosongo, Jebres, Surakarta",
+      postcode: "57127",
       description:
         "Ruang untuk terhubung, berdiskusi, dan membangun kemitraan bersama Tatsuo Beef.",
     },
