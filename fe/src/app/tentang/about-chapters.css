@@ -249,3 +249,145 @@
   color: #746859;
   font-size: 13px;
 }
+/* PRIMA: a sticky index, five generous typographic spreads, no carousel. */
+.tatsuo-about-principles {
+  color: #fff3e0;
+  padding-block: 80px;
+  background: #8f1923 var(--about-grain);
+}
+.about-prima-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 10%;
+  align-items: start;
+}
+.tatsuo-about-principles header {
+  display: block;
+}
+.about-prima-sticky {
+  position: sticky;
+  top: 135px;
+  padding-block: 20px;
+}
+.about-prima-sticky .tatsuo-about-label {
+  color: #edcb8f;
+  font-size: 10px;
+}
+.tatsuo-about-prima-heading > img {
+  width: 180px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  filter: brightness(0) invert(0.94);
+}
+.tatsuo-about-prima-heading h2 {
+  color: #fff3e0;
+  font-size: clamp(42px, 4.4vw, 67px);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+.tatsuo-about-prima-heading h2 em {
+  color: #edcb8f;
+  font-style: normal;
+}
+.about-prima-nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 35px;
+}
+.about-prima-nav a {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff3e04d;
+  color: #fff3e080;
+  font-family: var(--font-editorial), serif;
+  font-size: 24px;
+  line-height: 1;
+  transition:
+    color 0.3s,
+    background 0.3s,
+    border-color 0.3s;
+}
+.about-prima-nav a[aria-current],
+.about-prima-nav a:hover {
+  background: #edcb8f;
+  border-color: #edcb8f;
+  color: #8f1923;
+}
+.about-prima-progress {
+  display: block;
+  height: 1px;
+  background: #fff3e033;
+  max-width: 292px;
+  margin-top: 20px;
+}
+.about-prima-progress > span {
+  display: block;
+  height: 100%;
+  background: #edcb8f;
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.tatsuo-about-principles-grid {
+  display: block;
+  margin: 0;
+}
+.tatsuo-about-principle {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 440px;
+  padding: 65px 0;
+  scroll-margin-top: 145px;
+}
+.tatsuo-about-principle::before {
+  background: #fff3e040;
+}
+.about-prima-count {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #edcb8f;
+}
+.tatsuo-about-principle > .tatsuo-about-prima-letter {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 50%;
+  margin-top: -0.5em;
+  font-size: clamp(180px, 24vw, 350px);
+  color: #fff3e00c;
+  line-height: 1;
+  transition: color 0.4s ease;
+  pointer-events: none;
+}
+.tatsuo-about-principle.is-active > .tatsuo-about-prima-letter {
+  color: #fff3e019;
+}
+.about-prima-value-copy {
+  position: relative;
+  max-width: 480px;
+}
+.tatsuo-about-principle h3 {
+  margin-top: 25px;
+  font-size: clamp(42px, 4.8vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #fff3e0;
+}
+.tatsuo-about-principle h3 em {
+  color: #edcb8f;
+}
+.tatsuo-about-principle p {
+  font-size: 15px;
+  max-width: 350px;
+  margin-top: 25px;
+  color: #ecd6ce;
+}
+.tatsuo-about-principle:hover h3 {
+  translate: none;
+  color: #fff3e0;
+}
