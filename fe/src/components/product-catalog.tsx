@@ -206,15 +206,6 @@ export default function ProductCatalog() {
             </div>
           </div>
         )}
-        <div className="selection-notes">
-          <p>
-            Foto merupakan ilustrasi produk. Spesifikasi, harga, dan
-            ketersediaan dikonfirmasi bersama tim Tatsuo.
-          </p>
-          <a href={whatsapp()} target="_blank" rel="noopener noreferrer">
-            Butuh bantuan memilih? <Arrow diagonal />
-          </a>
-        </div>
       </div>
     </section>
   );

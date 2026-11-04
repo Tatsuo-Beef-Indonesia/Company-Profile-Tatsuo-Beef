@@ -18,7 +18,7 @@ const products = [
     id: "01",
     name: "Tenderloin Meltique",
     category: "Daging sapi",
-    image: "/images/product-tenderloin-v2.webp",
+    image: "/images/catalog/client-20261104/tenderloin-meltique.webp",
     note: "Tender. Juicy. Memorable.",
     use: "Steakhouse · Hotel · Restoran",
     description:
@@ -28,7 +28,7 @@ const products = [
     id: "02",
     name: "Shortplate Beef",
     category: "Daging sapi",
-    image: "/images/product-shortplate.webp",
+    image: "/images/catalog/client-20261104/shortplate-beef.webp",
     note: "Thin cuts. Full flavour.",
     use: "Shabu-shabu · Yakiniku · AYCE",
     description:
@@ -38,7 +38,7 @@ const products = [
     id: "03",
     name: "Boneless Dada Ayam",
     category: "Daging ayam",
-    image: "/images/product-chicken.webp",
+    image: "/images/catalog/client-20261104/boneless-dada-ayam.webp",
     note: "A kitchen essential.",
     use: "Katering · Restoran · Hotel",
     description:

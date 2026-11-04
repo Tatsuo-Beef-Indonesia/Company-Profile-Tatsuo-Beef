@@ -9,8 +9,7 @@ import "./catalog-cover.css";
 
 export const metadata: Metadata = {
   title: "Pilihan Produk — Tatsuo Beef",
-  description:
-    "Jelajahi 25 pilihan daging sapi, ayam, dan seafood Tatsuo Beef. Temukan bahan yang tepat untuk restoran, hotel, katering, dan dapur Anda.",
+  description: `Jelajahi ${products.length} pilihan daging sapi, ayam, kambing, domba, dan seafood Tatsuo Beef. Temukan bahan yang tepat untuk restoran, hotel, katering, dan dapur Anda.`,
   alternates: { canonical: "/produk" },
 };
 
@@ -21,7 +20,7 @@ export default function ProductsPage() {
         <div className="container catalog-cover-inner">
           <div className="catalog-cover-kicker">
             <span>THE TATSUO COLLECTION</span>
-            <span>25 PILIHAN · SATU DAPUR ANDA</span>
+            <span>{products.length} PILIHAN · SATU DAPUR ANDA</span>
           </div>
           <h1 id="selection-heading">
             Selera besar.
@@ -35,11 +34,11 @@ export default function ProductsPage() {
               aria-label="Jelajahi koleksi daging ayam"
             >
               <Image
-                src="/images/product-chicken.webp"
+                src="/images/catalog/client-20261104/boneless-dada-ayam.webp"
                 alt="Pilihan dada ayam tanpa tulang"
                 width={1000}
                 height={1000}
-                sizes="(max-width: 600px) 35vw, 25vw"
+                sizes="(max-width: 600px) 44vw, 23vw"
                 priority
               />
               <span className="catalog-cover-tile-label">
@@ -55,16 +54,36 @@ export default function ProductsPage() {
               aria-label="Jelajahi koleksi daging sapi"
             >
               <Image
-                src="/images/product-tenderloin-v2.webp"
+                src="/images/catalog/client-20261104/tenderloin-meltique.webp"
                 alt="Potongan tenderloin meltique"
                 width={1000}
                 height={1000}
-                sizes="(max-width: 600px) 52vw, 34vw"
+                sizes="(max-width: 600px) 44vw, 25vw"
                 priority
               />
               <span className="catalog-cover-tile-label">
                 <span>
                   Daging sapi<small>Potongan penuh karakter.</small>
+                </span>
+                <Arrow diagonal />
+              </span>
+            </a>
+            <a
+              className="catalog-cover-tile catalog-cover-lamb"
+              href="#koleksi"
+              aria-label="Jelajahi koleksi kambing dan domba"
+            >
+              <Image
+                src="/images/catalog/client-20261104/lamb-chop.webp"
+                alt="Pilihan lamb chop dari koleksi kambing dan domba"
+                width={1000}
+                height={1000}
+                sizes="(max-width: 600px) 44vw, 23vw"
+                priority
+              />
+              <span className="catalog-cover-tile-label">
+                <span>
+                  Kambing &amp; Domba<small>Rasa khas, sajian istimewa.</small>
                 </span>
                 <Arrow diagonal />
               </span>
@@ -79,7 +98,7 @@ export default function ProductsPage() {
                 alt="Pilihan salmon fillet"
                 width={1000}
                 height={1000}
-                sizes="(max-width: 600px) 35vw, 25vw"
+                sizes="(max-width: 600px) 44vw, 23vw"
                 priority
               />
               <span className="catalog-cover-tile-label">

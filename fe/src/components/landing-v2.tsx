@@ -19,32 +19,32 @@ const cuts = [
   {
     name: "Buntut Sapi",
     slug: "buntut-center-cut",
-    image: "product-oxtail",
+    image: "catalog/client-20261104/buntut-center-cut",
   },
   {
     name: "Tenderloin Meltique",
     slug: "tenderloin-meltique",
-    image: "product-tenderloin-v2",
+    image: "catalog/client-20261104/tenderloin-meltique",
   },
   {
     name: "Shortplate Beef",
     slug: "shortplate-beef",
-    image: "product-shortplate",
+    image: "catalog/client-20261104/shortplate-beef",
   },
   {
     name: "Boneless Dada Ayam",
     slug: "boneless-dada-ayam",
-    image: "product-chicken",
+    image: "catalog/client-20261104/boneless-dada-ayam",
   },
   {
     name: "Sirloin Meltique",
     slug: "sirloin-meltique",
-    image: "product-sirloin-v2",
+    image: "catalog/client-20261104/sirloin-meltique",
   },
   {
     name: "Saikoro",
     slug: "saikoro",
-    image: "product-saikoro",
+    image: "catalog/client-20261104/saikoro",
   },
   {
     name: "Salmon Fillet",

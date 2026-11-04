@@ -1,0 +1,38 @@
+// Client-supplied product photographs, background edits dated 4 November 2026.
+export const clientProductPhotos: Record<string, string> = {
+  "sirloin-meltique": "/images/catalog/client-20261104/sirloin-meltique.webp",
+  "tenderloin-meltique":
+    "/images/catalog/client-20261104/tenderloin-meltique.webp",
+  "slice-meltique": "/images/catalog/client-20261104/slice-meltique.webp",
+  sirloin: "/images/catalog/client-20261104/sirloin.webp",
+  "shortplate-beef": "/images/catalog/client-20261104/shortplate-beef.webp",
+  saikoro: "/images/catalog/client-20261104/saikoro.webp",
+  "otak-sapi": "/images/catalog/client-20261104/otak-sapi.webp",
+  "kaki-sapi": "/images/catalog/client-20261104/kaki-sapi.webp",
+  "babat-sapi": "/images/catalog/client-20261104/babat-sapi.webp",
+  "iga-shortrib": "/images/catalog/client-20261104/iga-shortrib.webp",
+  "iga-chuckrib": "/images/catalog/client-20261104/iga-chuckrib.webp",
+  "iga-muda": "/images/catalog/client-20261104/iga-muda.webp",
+  "iga-gondrong": "/images/catalog/client-20261104/iga-gondrong.webp",
+  "iga-backrib": "/images/catalog/client-20261104/iga-backrib.webp",
+  "buntut-center-cut": "/images/catalog/client-20261104/buntut-center-cut.webp",
+  "buntut-mix-cut": "/images/catalog/client-20261104/buntut-mix-cut.webp",
+  "daging-sapi-giling":
+    "/images/catalog/client-20261104/daging-sapi-giling.webp",
+  "boneless-paha": "/images/catalog/client-20261104/boneless-paha.webp",
+  "boneless-dada-ayam":
+    "/images/catalog/client-20261104/boneless-dada-ayam.webp",
+  "slice-ayam": "/images/catalog/client-20261104/slice-ayam.webp",
+  tenderloin: "/images/catalog/client-20261104/tenderloin.webp",
+  gandik: "/images/catalog/client-20261104/gandik.webp",
+  topside: "/images/catalog/client-20261104/topside.webp",
+  rump: "/images/catalog/client-20261104/rump.webp",
+  "lidah-sapi": "/images/catalog/client-20261104/lidah-sapi.webp",
+  "kikil-tunjang": "/images/catalog/client-20261104/kikil-tunjang.webp",
+  "lamb-chop": "/images/catalog/client-20261104/lamb-chop.webp",
+  "lamb-rack": "/images/catalog/client-20261104/lamb-rack.webp",
+  "paha-kambing": "/images/catalog/client-20261104/paha-kambing.webp",
+  "slice-lemak-60cl": "/images/catalog/client-20261104/slice-lemak-60cl.webp",
+  "slice-ribblade": "/images/catalog/client-20261104/slice-ribblade.webp",
+  "slice-brisket": "/images/catalog/client-20261104/slice-brisket.webp",
+};

@@ -143,6 +143,8 @@
   display: flex;
   gap: 8px;
   min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 .selection-tabs button {
   display: inline-flex;

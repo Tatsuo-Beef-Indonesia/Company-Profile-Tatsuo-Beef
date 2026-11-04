@@ -1,0 +1,351 @@
+{
+  "sourceArchive": "FOTO PRODUK DI RAPIHIN AI-20261104T012526Z-1-001.zip",
+  "method": "built-in image_gen; background-only edits from individual client reference images",
+  "export": "WebP, max 1000px, quality 88",
+  "assets": [
+    {
+      "slug": "sirloin-meltique",
+      "sourceFile": "sirloin meltiq.PNG",
+      "sourceSha256": "7fe07e59a68cc30bd675e97f7cf835bc863b63a48aa3f849dd8ec9be5be52f16",
+      "image": "/images/catalog/client-20261104/sirloin-meltique.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 273538,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "tenderloin-meltique",
+      "sourceFile": "tenderloin meltiq.PNG",
+      "sourceSha256": "7b289786f81cbe1e03685530f223ceccbec1d4e099dba77e244de6c7622fb94d",
+      "image": "/images/catalog/client-20261104/tenderloin-meltique.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 305614,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "slice-meltique",
+      "sourceFile": "slice meltiq.png",
+      "sourceSha256": "7c653769572c6ea0014235067751f64be06a3369a8e3ab64b8750df21974ed38",
+      "image": "/images/catalog/client-20261104/slice-meltique.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 297932,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "sirloin",
+      "sourceFile": "sirloin.png",
+      "sourceSha256": "9981bcd4b8490e24625344daecb5b2bcdcf350ad051c9f7e6a4515adbd3cc664",
+      "image": "/images/catalog/client-20261104/sirloin.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 221678,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "shortplate-beef",
+      "sourceFile": "slice shortplate US SWIFT.PNG",
+      "sourceSha256": "7ea3a97a355469772d9906e4cffd50d44163b046a9cf856ee5264f66d32495b2",
+      "image": "/images/catalog/client-20261104/shortplate-beef.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 212284,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "saikoro",
+      "sourceFile": "saikoro meltique.PNG",
+      "sourceSha256": "5527e3918308959f4cb51e918a90b97fddcb3d2f7791651be0ff6c0aee472fd8",
+      "image": "/images/catalog/client-20261104/saikoro.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 259972,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "otak-sapi",
+      "sourceFile": "otak_sapi-removebg-preview.png",
+      "sourceSha256": "fe616a4ebcdae78f936137d8c9646bc8c97560b715350eb2026d64b2c72bee11",
+      "image": "/images/catalog/client-20261104/otak-sapi.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 163810,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "kaki-sapi",
+      "sourceFile": "Tumpukan Kaki sapi Mentah.png",
+      "sourceSha256": "af7cae494524bf17a15c8b568952b5184495a84a7dc4952ce433fb37c367393e",
+      "image": "/images/catalog/client-20261104/kaki-sapi.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 164368,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "babat-sapi",
+      "sourceFile": "Tiga Jenis Babat Sapi dalam Nampan Foam.png",
+      "sourceSha256": "7a3fa0551cc24899c6f429ba99ca8819e5bbb488650948e64b51e843f00ad348",
+      "image": "/images/catalog/client-20261104/babat-sapi.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 307294,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "iga-shortrib",
+      "sourceFile": "iga shortribs.png",
+      "sourceSha256": "4bce2b627e10b93ba711ffd4838888e1231e12c7edf4c0f349cbe15c62da1466",
+      "image": "/images/catalog/client-20261104/iga-shortrib.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 249646,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "iga-chuckrib",
+      "sourceFile": "iga chuckrib tanpa bonggol.png",
+      "sourceSha256": "6c98ca4223224c872220b075d6e95f1a3c32d85b7921fc28a03e96b0dd17e0d8",
+      "image": "/images/catalog/client-20261104/iga-chuckrib.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 264018,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "iga-muda",
+      "sourceFile": "iga muda.png",
+      "sourceSha256": "84660b1024957645c20298826d857b8d453ed4b83283b5957649e1ec8b2bc267",
+      "image": "/images/catalog/client-20261104/iga-muda.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 261944,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent."
+    },
+    {
+      "slug": "iga-gondrong",
+      "sourceFile": "iga gondrong.png",
+      "sourceSha256": "bc9656d46108d10e62be03c6054fae681abcb1f680658a4242098931a5a1c0d0",
+      "image": "/images/catalog/client-20261104/iga-gondrong.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 327714,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "iga-backrib",
+      "sourceFile": "iga backrib.png",
+      "sourceSha256": "3426b793a7559bfc730931fcff56cf13a4c3af80163d44664ba621ee05993443",
+      "image": "/images/catalog/client-20261104/iga-backrib.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 245990,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "buntut-center-cut",
+      "sourceFile": "buntut center cut.png",
+      "sourceSha256": "e57fdd760e325584a6ff0f95ceaad6ae9417caefdb91f211791d60d839591e9f",
+      "image": "/images/catalog/client-20261104/buntut-center-cut.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 282040,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "buntut-mix-cut",
+      "sourceFile": "buntut mixed cut.png",
+      "sourceSha256": "c95ec9a4220a8e279a88b168a7a6f74047de6414741af4258dcc7f3dd9a08f6f",
+      "image": "/images/catalog/client-20261104/buntut-mix-cut.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 252354,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "daging-sapi-giling",
+      "sourceFile": "daging giling.png",
+      "sourceSha256": "1ad251fa4ae3f07ea5a7f12b8af93e6ee66b871a9fda7ed01d39b31789e93c49",
+      "image": "/images/catalog/client-20261104/daging-sapi-giling.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 284882,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "boneless-paha",
+      "sourceFile": "paha fillet ayam.png",
+      "sourceSha256": "4e37b2ddfb7b9632b912917265f5435eb11a30a341bf8dce8f311555f683f867",
+      "image": "/images/catalog/client-20261104/boneless-paha.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 149510,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "boneless-dada-ayam",
+      "sourceFile": "dada fillet ayam.png",
+      "sourceSha256": "c1448d43330748dcf02309515a2fa2d7299bec4259acb4f51546f23d746cd65e",
+      "image": "/images/catalog/client-20261104/boneless-dada-ayam.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 163504,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "slice-ayam",
+      "sourceFile": "slice ayam.png",
+      "sourceSha256": "5bc0cb80c8de2263ddc961fec956c16c0379a413876b8966e1ff5e1a030bc5cb",
+      "image": "/images/catalog/client-20261104/slice-ayam.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 222804,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "tenderloin",
+      "sourceFile": "tenderloin.png",
+      "sourceSha256": "9c4ab798c0a0cd624834c75a0512d103974c10762f2f6a1bb89561c33a2e2ed9",
+      "image": "/images/catalog/client-20261104/tenderloin.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 206854,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "gandik",
+      "sourceFile": "gandik.PNG",
+      "sourceSha256": "9830a79f9902965dfa3250e9b17ad6fe5c6f18bd3bd1cf6a9d69c3f602b254a0",
+      "image": "/images/catalog/client-20261104/gandik.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 197694,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "topside",
+      "sourceFile": "topside.png",
+      "sourceSha256": "182c547d2ce3086cdf49cdd76c23fec773aa293314512380b73cf27d85361b2a",
+      "image": "/images/catalog/client-20261104/topside.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 201386,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "rump",
+      "sourceFile": "rump.png",
+      "sourceSha256": "90cceb9dc996d4849b1e71aefa7c099ffde72001f807f7b4a55ffef59c7c5200",
+      "image": "/images/catalog/client-20261104/rump.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 273630,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "lidah-sapi",
+      "sourceFile": "Lidah Sapi Mentah.png",
+      "sourceSha256": "6e6b25e0ec44854ef6ed7793f29865f174e302a9f476d088937d6262a1556381",
+      "image": "/images/catalog/client-20261104/lidah-sapi.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 152206,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "kikil-tunjang",
+      "sourceFile": "kikil tunjang.PNG",
+      "sourceSha256": "8149c9b12cf5acc14218cb22cd66d5dcc373d6b1ab2c37870645f48abbf0e3eb",
+      "image": "/images/catalog/client-20261104/kikil-tunjang.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 214642,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "lamb-chop",
+      "sourceFile": "LAMB CHOP.PNG",
+      "sourceSha256": "d29b4ae814d9381b16bf7095d81d9640e4c7e4d9648ca02a306d07b4a2de6543",
+      "image": "/images/catalog/client-20261104/lamb-chop.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 231218,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "lamb-rack",
+      "sourceFile": "lamb rack.PNG",
+      "sourceSha256": "2a42801ad8784fce9b80b30ee16b9f9403f8f850c555a3719383fd645f66b484",
+      "image": "/images/catalog/client-20261104/lamb-rack.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 240728,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "paha-kambing",
+      "sourceFile": "paha kambing.png",
+      "sourceSha256": "be85cf13478be025fca8930200b1e9bdd0413b0298d8cc49882c35545948c841",
+      "image": "/images/catalog/client-20261104/paha-kambing.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 172076,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "slice-lemak-60cl",
+      "sourceFile": "slice lemak (60CL).png",
+      "sourceSha256": "9278bc063ca13e0d6be62e75b70becc00214ae06fce1e4a57bef11bec48c906e",
+      "image": "/images/catalog/client-20261104/slice-lemak-60cl.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 282812,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "slice-ribblade",
+      "sourceFile": "slice riblade.PNG",
+      "sourceSha256": "dcb2f23588b31515892c0a4c7014c35ac7b708e999728559d9b4d82d2ce94478",
+      "image": "/images/catalog/client-20261104/slice-ribblade.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 200324,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    },
+    {
+      "slug": "slice-brisket",
+      "sourceFile": "slice brisket.PNG",
+      "sourceSha256": "80444cc127c0e6144fc354a05406cc4b72dce9b0f35011692a7ba1b245a42cc7",
+      "image": "/images/catalog/client-20261104/slice-brisket.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 258952,
+      "prompt": "Use case: precise-object-edit. This is a BACKGROUND-ONLY edit of the attached client product photograph, not a new product generation. The client's actual meat must be preserved as faithfully as possible: identical piece count, silhouette, arrangement, muscle grain, fat/marbling patterns, bone structure, color and cuts. Preserve any existing white foam tray or packaging as part of the product; remove only the external backdrop, including white or transparent areas and unwanted glow around it. Replace external backdrop with an elegant matte dark charcoal BLACK SLATE tabletop, subtle natural stone texture, restrained soft top-left lighting and believable soft contact shadow. Match a premium butcher catalog. Square 1:1 composition; keep the ENTIRE original product arrangement, scale it uniformly to fit the central 80% with clean margins, never crop it, never reshape or add pieces. Do not improve/change marbling, do not turn cuts into Wagyu, do not recolor meat. No new garnish, herbs, salt, utensils, hands, labels, text, logos, watermark. Existing packaging stays exactly as shown. Background is opaque dark slate, not transparent. Preserve any original plate too; replace only the background outside the plate or tray."
+    }
+  ],
+  "removedAssets": [
+    "public/images/product-chicken.webp",
+    "public/images/product-oxtail.webp",
+    "public/images/product-saikoro.webp",
+    "public/images/product-shortplate.webp",
+    "public/images/product-sirloin.webp",
+    "public/images/product-sirloin-v2.webp",
+    "public/images/product-tenderloin.webp",
+    "public/images/product-tenderloin-v2.webp",
+    "public/images/catalog/babat-sapi.webp",
+    "public/images/catalog/boneless-paha.webp",
+    "public/images/catalog/buntut-mix-cut.webp",
+    "public/images/catalog/daging-sapi-giling.webp",
+    "public/images/catalog/iga-backrib.webp",
+    "public/images/catalog/iga-chuckrib.webp",
+    "public/images/catalog/iga-gondrong.webp",
+    "public/images/catalog/iga-muda.webp",
+    "public/images/catalog/iga-shortrib.webp",
+    "public/images/catalog/kaki-sapi.webp",
+    "public/images/catalog/kaki-sapi-v2.webp",
+    "public/images/catalog/otak-sapi.webp",
+    "public/images/catalog/slice-ayam.webp",
+    "public/images/catalog/slice-meltique.webp"
+  ]
+}

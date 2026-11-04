@@ -333,7 +333,7 @@ export default function AboutExperience() {
           </figure>
           <figure className="about-film-side">
             <Image
-              src="/images/product-shortplate.webp"
+              src="/images/catalog/client-20261104/shortplate-beef.webp"
               alt="Irisan daging pilihan Tatsuo"
               width={1000}
               height={1000}

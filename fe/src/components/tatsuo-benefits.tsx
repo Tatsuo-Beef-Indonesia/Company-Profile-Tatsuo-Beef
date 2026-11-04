@@ -35,12 +35,12 @@ const promises = [
   },
 ];
 const tiles = [
-  "product-oxtail",
-  "product-tenderloin-v2",
-  "product-shortplate",
-  "product-chicken",
-  "product-sirloin-v2",
-  "product-saikoro",
+  "catalog/client-20261104/buntut-center-cut",
+  "catalog/client-20261104/tenderloin-meltique",
+  "catalog/client-20261104/shortplate-beef",
+  "catalog/client-20261104/boneless-dada-ayam",
+  "catalog/client-20261104/sirloin-meltique",
+  "catalog/client-20261104/saikoro",
   "product-salmon",
   "product-shrimp",
 ];

@@ -1,4 +1,7 @@
-export type Category = "Daging sapi" | "Daging ayam" | "Seafood";
+import { clientProductPhotos } from "./client-product-photos";
+
+export type Category =
+  "Daging sapi" | "Daging ayam" | "Kambing & domba" | "Seafood";
 export type Product = {
   slug: string;
   name: string;
@@ -10,13 +13,13 @@ export type Product = {
   featured?: boolean;
 };
 const photoOverrides: Record<string, string> = {
-  "kaki-sapi": "/images/catalog/kaki-sapi-v2.webp",
-  "sirloin-meltique": "/images/product-sirloin-v2.webp",
-  saikoro: "/images/product-saikoro.webp",
   "udang-vaname": "/images/product-shrimp.webp",
 };
 const productPhoto = (slug: string, image?: string) =>
-  image ?? photoOverrides[slug] ?? `/images/catalog/${slug}.webp`;
+  clientProductPhotos[slug] ??
+  image ??
+  photoOverrides[slug] ??
+  `/images/catalog/${slug}.webp`;
 
 const beef = (
   slug: string,
@@ -64,6 +67,20 @@ const seafood = (
   kind: "Seafood selection",
   category: "Seafood",
 });
+const lamb = (
+  slug: string,
+  name: string,
+  description: string,
+  use: string[],
+): Product => ({
+  slug,
+  name,
+  description,
+  use,
+  image: productPhoto(slug),
+  kind: "Lamb & goat selection",
+  category: "Kambing & domba",
+});
 export const products: Product[] = [
   beef(
     "sirloin-meltique",
@@ -76,9 +93,9 @@ export const products: Product[] = [
     "tenderloin-meltique",
     "Tenderloin Meltique",
     "Signature cut",
-    "Potongan khas dalam meltique dengan tekstur lembut dan marbling yang kaya. Pilihan untuk menghadirkan sajian steak yang berkesan di meja pelanggan Anda.",
+    "Potongan tenderloin meltique untuk sajian steak dan menu panggang. Diskusikan spesifikasi potongan serta kebutuhan dapur Anda bersama tim kami.",
     ["Steakhouse", "Hotel", "Restoran"],
-    "/images/product-tenderloin-v2.webp",
+    "/images/catalog/client-20261104/tenderloin-meltique.webp",
   ),
   beef(
     "slice-meltique",
@@ -100,7 +117,7 @@ export const products: Product[] = [
     "Signature cut",
     "Irisan daging sapi dengan perpaduan daging dan lemak untuk cita rasa yang kaya. Fleksibel untuk menu grill, sukiyaki, dan shabu-shabu.",
     ["Shabu-shabu", "Yakiniku", "AYCE"],
-    "/images/product-shortplate.webp",
+    "/images/catalog/client-20261104/shortplate-beef.webp",
   ),
   beef(
     "saikoro",
@@ -171,7 +188,7 @@ export const products: Product[] = [
     "Signature cut",
     "Potongan bagian tengah buntut sapi untuk hidangan berkuah maupun olahan berbumbu. Pilihan untuk membangun kaldu yang kaya dan sajian yang berkesan.",
     ["Sop buntut", "Buntut bakar", "Braising"],
-    "/images/product-oxtail.webp",
+    "/images/catalog/client-20261104/buntut-center-cut.webp",
   ),
   beef(
     "buntut-mix-cut",
@@ -194,6 +211,94 @@ export const products: Product[] = [
     "Pilihan daging sapi untuk kebutuhan menu harian. Diskusikan bagian dan bentuk potongan sesuai resep serta pola kebutuhan usaha Anda.",
     ["Rendang", "Semur", "Tumis"],
   ),
+  beef(
+    "sirloin",
+    "Sirloin",
+    "Steak cuts",
+    "Pilihan sirloin untuk kebutuhan menu dapur Anda. Konsultasikan ukuran, bentuk potongan, dan ketersediaan produk bersama tim Tatsuo.",
+    ["Steak", "Grill", "Roasting"],
+  ),
+  beef(
+    "tenderloin",
+    "Tenderloin",
+    "Steak cuts",
+    "Tenderloin untuk kreasi steak maupun pengolahan sesuai kebutuhan dapur. Tim kami siap membantu informasi spesifikasi dan pilihan potongannya.",
+    ["Steak", "Grill", "Roasting"],
+  ),
+  beef(
+    "gandik",
+    "Gandik",
+    "Everyday essentials",
+    "Pilihan gandik sapi untuk beragam menu olahan. Sampaikan kebutuhan ukuran potong dan cara pengolahan kepada tim kami sebelum memesan.",
+    ["Rendang", "Empal", "Semur"],
+  ),
+  beef(
+    "topside",
+    "Topside",
+    "Everyday essentials",
+    "Potongan topside untuk kebutuhan restoran, katering, dan dapur usaha. Diskusikan bentuk sajian serta spesifikasi produk yang Anda perlukan.",
+    ["Rendang", "Empal", "Roasting"],
+  ),
+  beef(
+    "rump",
+    "Rump",
+    "Steak cuts",
+    "Pilihan rump sapi untuk eksplorasi menu dapur. Tim Tatsuo membantu memastikan bentuk potongan sesuai dengan kebutuhan pengolahan Anda.",
+    ["Grill", "Roasting", "Tumis"],
+  ),
+  beef(
+    "lidah-sapi",
+    "Lidah Sapi",
+    "Specialty cuts",
+    "Lidah sapi untuk hidangan dengan karakter tersendiri. Informasi bentuk produk, persiapan, dan ketersediaan dapat didiskusikan bersama tim kami.",
+    ["Grill", "Semur", "Braising"],
+  ),
+  beef(
+    "kikil-tunjang",
+    "Kikil Tunjang",
+    "Specialty cuts",
+    "Pilihan kikil tunjang untuk masakan tradisional dan sajian berkuah. Konsultasikan kebutuhan pengolahan serta spesifikasi produk sebelum pemesanan.",
+    ["Gulai tunjang", "Soto", "Masakan tradisional"],
+  ),
+  beef(
+    "slice-lemak-60cl",
+    "Slice Lemak (60CL)",
+    "Sliced selection",
+    "Pilihan slice lemak 60CL untuk kreasi olahan dapur Anda. Tim sales siap memberikan rincian spesifikasi dan ketersediaan sesuai kebutuhan usaha.",
+    ["Grill", "Tumis", "Olahan dapur"],
+  ),
+  beef(
+    "slice-ribblade",
+    "Slice Ribblade",
+    "Sliced selection",
+    "Irisan ribblade untuk pengolahan praktis di dapur usaha. Diskusikan kebutuhan ketebalan irisan dan porsi sajian dengan tim Tatsuo.",
+    ["Grill", "Rice bowl", "Tumis"],
+  ),
+  beef(
+    "slice-brisket",
+    "Slice Brisket",
+    "Sliced selection",
+    "Irisan brisket untuk aneka kreasi menu panggang dan berkuah. Temukan spesifikasi irisan yang sesuai dengan kebutuhan dapur Anda bersama tim kami.",
+    ["Grill", "Shabu-shabu", "Rice bowl"],
+  ),
+  lamb(
+    "lamb-chop",
+    "Lamb Chop",
+    "Potongan lamb chop untuk menu panggang dan sajian istimewa. Tim kami siap membantu informasi spesifikasi potongan serta ketersediaan produk.",
+    ["Grill", "BBQ", "Pan-seared"],
+  ),
+  lamb(
+    "lamb-rack",
+    "Lamb Rack",
+    "Pilihan lamb rack untuk presentasi menu yang berkesan. Sampaikan kebutuhan ukuran, pengolahan, dan jumlah pesanan kepada tim Tatsuo.",
+    ["Roasting", "Grill", "Western menu"],
+  ),
+  lamb(
+    "paha-kambing",
+    "Paha Kambing",
+    "Paha kambing untuk berbagai kreasi masakan dan kebutuhan dapur usaha. Diskusikan spesifikasi, bentuk potongan, dan ketersediaan produk bersama tim kami.",
+    ["Gulai", "Roasting", "Masakan tradisional"],
+  ),
   chicken(
     "slice-ayam",
     "Slice Ayam",
@@ -211,7 +316,14 @@ export const products: Product[] = [
     "Boneless Dada",
     "Dada ayam tanpa tulang yang praktis untuk berbagai kreasi menu. Bahan andalan untuk dapur yang membutuhkan fleksibilitas dalam pengolahan.",
     ["Katering", "Restoran", "Hotel"],
-    "/images/product-chicken.webp",
+    "/images/catalog/client-20261104/boneless-dada-ayam.webp",
+  ),
+  chicken(
+    "ceker-ayam-tanpa-tulang",
+    "Ceker Ayam Tanpa Tulang",
+    "Ceker ayam tanpa tulang untuk aneka kreasi menu berbumbu. Praktis diolah menjadi sajian pedas, dimsum, maupun tumisan sesuai kebutuhan dapur Anda.",
+    ["Dimsum", "Tumis", "Sajian pedas"],
+    "/images/catalog/ceker-ayam-tanpa-tulang-ai.webp",
   ),
   seafood(
     "salmon-fillet",
@@ -239,7 +351,12 @@ export const products: Product[] = [
     ["Fish & chips", "Steam", "Grill"],
   ),
 ];
-export const categories = ["Daging sapi", "Daging ayam", "Seafood"] as const;
+export const categories = [
+  "Daging sapi",
+  "Daging ayam",
+  "Kambing & domba",
+  "Seafood",
+] as const;
 export const featuredProducts = [
   "tenderloin-meltique",
   "shortplate-beef",

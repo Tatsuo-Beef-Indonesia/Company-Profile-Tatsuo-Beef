@@ -44,3 +44,7 @@ next-env.d.ts
 /artifacts/
 /test-results/
 /playwright-report/
+
+# Original client delivery stays local; the optimized catalog photos are versioned.
+/public/drive mbak aira/
+/assets/client-products-2026-11-04/
