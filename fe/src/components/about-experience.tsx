@@ -812,7 +812,7 @@ export default function AboutExperience() {
       >
         <div className="container tatsuo-about-halal-inner">
           <div className="tatsuo-about-halal-copy tatsuo-about-reveal">
-            <span className="tatsuo-about-label">04 / KOMITMEN HALAL</span>
+            <span className="tatsuo-about-label">07 / KOMITMEN HALAL</span>
             <h2 id="about-halal-heading">
               Bukan sekadar pilihan.
               <br />
@@ -820,9 +820,13 @@ export default function AboutExperience() {
             </h2>
             <p>
               Kepercayaan berawal dari informasi yang jelas. Berikut informasi
-              sertifikasi halal produk Tatsuo Beef yang juga kami tampilkan di
-              halaman utama.
+              sertifikasi halal produk Tatsuo Beef, dengan dokumen yang bisa
+              Anda lihat langsung.
             </p>
+            <div className="tatsuo-about-certificate-number">
+              <span>NOMOR SERTIFIKAT HALAL</span>
+              <strong>{company.halal.certificateId}</strong>
+            </div>
             <a
               className="tatsuo-about-link"
               href={whatsapp(
@@ -840,19 +844,23 @@ export default function AboutExperience() {
               <span>TATSUO BEEF</span>
             </div>
             <Image
-              src="/images/tatsuo-halal-certificate.png"
-              alt="Informasi produk Tatsuo Beef bersertifikat halal beserta tanda Halal Indonesia dan kode QR asli"
-              width={196}
-              height={196}
+              src={company.halal.certificateImage}
+              alt={`Sertifikat halal PT. Tatsuo Beef Indonesia nomor ${company.halal.certificateId}`}
+              width={1191}
+              height={1684}
               unoptimized
             />
-            <figcaption>Informasi halal produk Tatsuo Beef.</figcaption>
+            <figcaption>
+              PT. Tatsuo Beef Indonesia
+              <br />
+              {company.halal.certificateId}
+            </figcaption>
             <a
-              href="/images/tatsuo-halal-certificate.png"
+              href={company.halal.certificateImage}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Buka gambar asli <Arrow diagonal />
+              Lihat sertifikat halal <Arrow diagonal />
             </a>
           </figure>
         </div>
@@ -872,7 +880,7 @@ export default function AboutExperience() {
         </div>
         <div className="tatsuo-about-partners tatsuo-about-reveal">
           {partners.map(([name, slug]) => (
-            <div key={slug}>
+            <div key={slug} data-partner={slug}>
               <Image
                 src={`/images/partners/${slug}.webp`}
                 alt={name}
