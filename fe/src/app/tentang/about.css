@@ -1108,3 +1108,151 @@
   transform: translate(3px, -3px);
 }
 
+/* PRIMA keeps the five values visible as one concise system. */
+.tatsuo-about-prima-heading > img {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+}
+.tatsuo-about-prima-heading h2 {
+  font-size: clamp(25px, 2.8vw, 40px);
+  line-height: 1.2;
+}
+.tatsuo-about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+}
+.tatsuo-about-principle {
+  display: block;
+  padding-block: 24px 0;
+}
+.tatsuo-about-principle > .tatsuo-about-prima-letter {
+  display: block;
+  font-family: var(--font-editorial), serif;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--red);
+}
+.tatsuo-about-principle h3 {
+  margin-top: 22px;
+  font-size: clamp(22px, 2vw, 29px);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.tatsuo-about-principle p {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.tatsuo-about-people {
+  padding-block: 0 85px;
+}
+.tatsuo-about-people-heading {
+  padding-top: 34px;
+  border-top: 1px solid #c9bca9;
+}
+.tatsuo-about-people h2 {
+  margin-top: 16px;
+  font-size: clamp(30px, 3.3vw, 46px);
+  line-height: 1.2;
+}
+.tatsuo-about-people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+.tatsuo-about-people-grid article > span {
+  font-size: 11px;
+  color: var(--red);
+}
+.tatsuo-about-people-grid h3 {
+  margin-top: 12px;
+  font-family: var(--font-editorial), serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.tatsuo-about-people-grid p {
+  max-width: 360px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #746859;
+}
+.tatsuo-about-partners {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.tatsuo-about-partners > div {
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  min-height: 145px;
+  background: #fff;
+  border: 1px solid #c9bca94d;
+}
+.tatsuo-about-partners > [data-partner="waroeng-steak"] {
+  background: #24251f;
+}
+.tatsuo-about-partners img {
+  height: 100px;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .tatsuo-about-principles-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+}
+@media (max-width: 760px) {
+  .tatsuo-about-prima-heading > img {
+    width: 220px;
+  }
+  .tatsuo-about-principles-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .tatsuo-about-principle {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 8px 18px;
+    padding-block: 22px;
+  }
+  .tatsuo-about-principle > .tatsuo-about-prima-letter {
+    grid-row: 1 / 3;
+    font-size: 48px;
+  }
+  .tatsuo-about-principle h3 {
+    margin: 0;
+    font-size: 26px;
+  }
+  .tatsuo-about-principle p {
+    margin: 0;
+  }
+  .tatsuo-about-people {
+    padding-bottom: 50px;
+  }
+  .tatsuo-about-people-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .tatsuo-about-people-grid p {
+    max-width: none;
+  }
+  .tatsuo-about-partners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .tatsuo-about-partners > div {
+    min-height: 110px;
+    padding: 16px;
+  }
+  .tatsuo-about-partners img {
+    height: 75px;
+  }
+}
+
