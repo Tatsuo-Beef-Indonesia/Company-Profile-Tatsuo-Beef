@@ -540,3 +540,180 @@
     height: 620px;
   }
 }
+@media (max-width: 760px) {
+  .about-kaizen-photo {
+    height: 360px;
+  }
+  .about-kaizen-photo-caption {
+    bottom: 20px;
+    font-size: 8px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .tatsuo-about-kaizen {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-block: 65px 50px;
+  }
+  .about-kaizen-kanji {
+    top: -25px;
+    left: auto;
+    right: 0;
+    font-size: 150px;
+  }
+  .tatsuo-about-kaizen h2 {
+    font-size: clamp(22px, 5.8vw, 34px);
+    margin-top: 25px;
+  }
+  .tatsuo-about-kaizen-translation {
+    font-size: 35px;
+    margin-top: 28px;
+  }
+  .tatsuo-about-kaizen-story h3 {
+    font-size: clamp(53px, 14vw, 76px);
+  }
+  .about-kaizen-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
+  .about-kaizen-workflow h4 {
+    font-size: 28px;
+    margin-top: 18px;
+  }
+  .about-founder-note > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .about-founder-note h3,
+  .about-founder-note p {
+    max-width: none;
+  }
+  .tatsuo-about-purpose,
+  .about-mission-chapter {
+    padding-block: 55px;
+  }
+  .tatsuo-about-vision > svg {
+    width: 36px;
+    height: 36px;
+  }
+  .about-vision-caption {
+    margin-top: 30px;
+  }
+  .tatsuo-about-vision h2 {
+    font-size: clamp(36px, 9.3vw, 56px);
+  }
+  .tatsuo-about-vision > p {
+    margin-left: 0;
+  }
+  .about-mission-chapter .tatsuo-about-missions {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .about-mission-chapter h3 {
+    font-size: 43px;
+  }
+  .about-mission-chapter .tatsuo-about-mission {
+    grid-template-columns: 25px 1fr 15px;
+    gap: 14px;
+  }
+  .about-mission-chapter .tatsuo-about-mission h4 {
+    font-size: 27px;
+  }
+  .tatsuo-about-principles {
+    padding-block: 50px 25px;
+  }
+  .about-prima-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-prima-sticky {
+    position: static;
+    padding: 0;
+  }
+  .tatsuo-about-prima-heading h2 {
+    font-size: 44px;
+  }
+  .tatsuo-about-prima-heading > img {
+    width: 150px;
+    margin-block: 22px;
+  }
+  .about-prima-nav {
+    gap: 12px;
+    margin-top: 25px;
+  }
+  .about-prima-nav a {
+    width: 44px;
+    height: 44px;
+  }
+  .tatsuo-about-principles-grid {
+    display: block;
+    margin-top: 15px;
+  }
+  .tatsuo-about-principle {
+    display: flex;
+    min-height: 290px;
+    padding-block: 40px;
+  }
+  .tatsuo-about-principle > .tatsuo-about-prima-letter {
+    font-size: 220px;
+    grid-row: auto;
+  }
+  .tatsuo-about-principle h3 {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+  .tatsuo-about-principle p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .tatsuo-about-people {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 55px;
+  }
+  .about-people-photo {
+    height: 420px;
+    max-height: none;
+  }
+  .tatsuo-about-people h2 {
+    font-size: 38px;
+  }
+  .tatsuo-about-halal {
+    padding-block: 55px;
+  }
+  .tatsuo-about-halal-inner {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .tatsuo-about-company {
+    padding-block: 55px;
+  }
+}
+@media (max-height: 750px) and (min-width: 761px) {
+  .about-prima-sticky {
+    top: 110px;
+  }
+  .tatsuo-about-prima-heading h2 {
+    font-size: 43px;
+  }
+  .tatsuo-about-prima-heading > img {
+    width: 140px;
+    margin-block: 18px;
+  }
+  .about-prima-nav {
+    margin-top: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-prima-nav a,
+  .about-prima-progress > span,
+  .tatsuo-about-principle > .tatsuo-about-prima-letter,
+  .tatsuo-about-partners > div {
+    transition: none;
+  }
+}
+@media (max-height: 600px) and (min-width: 761px) {
+  .about-prima-sticky {
+    position: static;
+  }
+}
