@@ -411,7 +411,7 @@ export default function AboutExperience() {
         <div className="container">
           <div className="about-manifesto-meta tatsuo-about-enter">
             <span>PT. TATSUO BEEF INDONESIA</span>
-            <span>BERMULA DI 2023 — BERTUMBUH BERSAMA.</span>
+            <span>BERMULA DI 2020 — BERTUMBUH BERSAMA.</span>
           </div>
           <h1 id="about-title" className="about-manifesto-title">
             <span>
@@ -455,7 +455,7 @@ export default function AboutExperience() {
               width={1672}
               height={941}
               priority
-              sizes="(max-width: 760px) 80vw, 60vw"
+              sizes="(max-width: 760px) 52vw, 60vw"
             />
             <figcaption>02 / DENGAN PERHATIAN</figcaption>
             <span className="about-film-seal">
@@ -523,20 +523,111 @@ export default function AboutExperience() {
             <em>Lebih jauh dalam kemitraan.</em>
           </h2>
           <p>
-            Sejak 2023, PT. Tatsuo Beef Indonesia hadir untuk membantu usaha
-            kuliner memenuhi kebutuhan bahan pangan. Kami menyediakan ayam,
-            daging sapi impor, dan daging sapi lokal untuk beragam kebutuhan
-            dapur.
+            Bergerak dalam pengadaan bahan pangan sejak 2020 dan menjadi PT pada
+            2025, Tatsuo Beef Indonesia hadir untuk membantu usaha kuliner
+            memenuhi kebutuhan dapur. Kami menyediakan ayam, daging sapi impor,
+            dan daging sapi lokal untuk beragam kebutuhan dapur.
           </p>
           <p>
-            Tujuan kami tumbuh bersama Anda: membangun hubungan usaha yang baik,
-            terbuka, dan berkelanjutan. Karena bahan yang Anda pilih hari ini
-            adalah bagian dari cerita usaha Anda berikutnya.
+            Dari pelanggan hingga supplier, setiap hubungan mengajarkan kami
+            cara melayani lebih baik. Kami ingin tumbuh bersama Anda, membangun
+            ekosistem usaha yang adil dan berkelanjutan.
           </p>
           <div className="tatsuo-about-selection">
             <span>Daging sapi impor &amp; lokal</span>
             <span>Daging ayam</span>
             <span>Bahan pangan pilihan</span>
+          </div>
+          <a
+            className="tatsuo-about-halal-id"
+            href="#halal"
+            aria-label={`Lihat informasi sertifikat halal ${company.halal.certificateId}`}
+          >
+            <span>BERSERTIFIKAT HALAL</span>
+            <strong>{company.halal.certificateId}</strong>
+            <Arrow diagonal />
+          </a>
+        </div>
+      </section>
+
+      <section
+        className="about-kaizen-chapter"
+        aria-labelledby="about-kaizen-heading"
+      >
+        <div className="about-kaizen-photo">
+          <MobileOptimizedImage
+            src="/images/craft-butcher-hands-v1.webp"
+            alt="Ilustrasi ketelitian dalam menyiapkan potongan daging"
+            width={1600}
+            height={1000}
+            sizes="100vw"
+          />
+          <div className="container about-kaizen-photo-caption">
+            <span>THE TATSUO WAY</span>
+            <span>PERBAIKAN KECIL. KEMAJUAN BERARTI.</span>
+          </div>
+        </div>
+        <div className="container tatsuo-about-kaizen">
+          <div className="tatsuo-about-kaizen-signature">
+            <span className="tatsuo-about-label">02 / SEMANGAT KAIZEN</span>
+            <span className="about-kaizen-kanji" lang="ja" aria-hidden="true">
+              改善
+            </span>
+            <h2 id="about-kaizen-heading" lang="ja">
+              持続的改善に向かって
+            </h2>
+            <p className="tatsuo-about-kaizen-romaji" lang="ja-Latn">
+              Jizokuteki kaizen ni mukatte
+            </p>
+            <p className="tatsuo-about-kaizen-translation" lang="en">
+              Towards Continuous Improvement
+            </p>
+            <p className="tatsuo-about-kaizen-meaning">
+              Menuju perbaikan yang berkelanjutan.
+            </p>
+          </div>
+          <div className="tatsuo-about-kaizen-story">
+            <h3>
+              Belajar.
+              <br />
+              Berbenah.
+              <br />
+              <em>Bertumbuh.</em>
+            </h3>
+            <p>
+              Pengalaman bersama pelanggan dan supplier mengajarkan kami di mana
+              harus berbenah. Dari perbaikan kecil yang terus dilakukan, Tatsuo
+              tumbuh hingga hari ini.
+            </p>
+            <p>
+              Untuk kepuasan pelanggan, nilai SDM yang terus meningkat, dan masa
+              depan bisnis yang lebih baik.
+            </p>
+          </div>
+          <ol
+            className="about-kaizen-workflow"
+            aria-label="Semangat perbaikan berkelanjutan"
+          >
+            {kaizenSteps.map(([title, text], index) => (
+              <li key={title}>
+                <span>0{index + 1}</span>
+                <h4>{title}</h4>
+                <p>{text}</p>
+                <Arrow diagonal />
+              </li>
+            ))}
+          </ol>
+          <div className="about-founder-note">
+            <span className="tatsuo-about-label">FILOSOFI PENDIRI</span>
+            <div>
+              {founderPrinciples.map((item, index) => (
+                <article key={item.title}>
+                  <span>0{index + 1}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
