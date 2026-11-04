@@ -31,7 +31,7 @@ export default function LandingHero({
     const context = gsap.context(() => {
       media.add("(prefers-reduced-motion: no-preference)", () => {
         if (!introReady) return;
-        gsap.set(".hero-copy", { autoAlpha: 1 });
+        gsap.set(".hero-copy, .hero-kaizen", { autoAlpha: 1 });
         gsap.from(".hero-line > span", {
           yPercent: 110,
           rotate: 3,
@@ -71,7 +71,7 @@ export default function LandingHero({
       });
       media.add("(prefers-reduced-motion: reduce)", () => {
         if (!introReady) return;
-        gsap.set(".hero-copy", { autoAlpha: 1 });
+        gsap.set(".hero-copy, .hero-kaizen", { autoAlpha: 1 });
         gsap.fromTo(
           ".hero-copy",
           { autoAlpha: 1 },
@@ -118,6 +118,13 @@ export default function LandingHero({
         <div className="hero-shade" />
         <div className="hero-light" aria-hidden="true" />
         <Ambient />
+        <p
+          className="hero-kaizen"
+          lang="ja"
+          title="Jizokuteki kaizen ni mukatte — Menuju perbaikan yang berkelanjutan"
+        >
+          持続的改善に向かって
+        </p>
         <div className="hero-copy container">
           <h1 id="hero-heading">
             <span className="hero-line">
