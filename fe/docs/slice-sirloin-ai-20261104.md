@@ -8,7 +8,9 @@ The client explicitly requested lean red slices without marbling and allowed an 
 - Style reference: the client slice-brisket photo, for tray, slate and lighting only.
 - Image subject: fully generated, not a client product photograph.
 - Catalog and product detail both consume the updated product image.
-- The superseded marbled `public/images/catalog/slice-sirloin.webp` was removed.
+- The superseded marbled photo was removed. Its former URL,
+  `public/images/catalog/slice-sirloin.webp`, now serves an identical copy of the
+  new lean image so cached catalog pages and client bundles do not show a broken image.
 
 ## Final prompt
 
