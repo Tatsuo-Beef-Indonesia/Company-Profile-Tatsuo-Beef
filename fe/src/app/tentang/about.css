@@ -915,31 +915,49 @@
     height: 48px;
   }
   .about-filmstrip {
-    width: 160%;
-    margin-left: -30%;
-    gap: 12px;
+    width: 100%;
+    margin-left: 0;
+    gap: 8px;
+    padding-inline: 10px;
+    align-items: center;
   }
   .about-film-main {
-    flex: 3;
+    flex: 2.4;
   }
   .about-film-main img {
     aspect-ratio: 1.1;
   }
   .about-film-side img {
-    aspect-ratio: 0.55;
+    aspect-ratio: 0.65;
   }
   .about-film-side figcaption {
-    visibility: hidden;
+    display: none;
+  }
+  .about-film-main {
+    overflow: visible;
+  }
+  .about-film-main figcaption {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
   }
   .about-film-seal {
-    right: 12px;
-    bottom: 48px;
-    padding: 10px 13px;
-    gap: 10px;
+    right: 8px;
+    bottom: 16px;
+    padding: 8px;
+    gap: 6px;
+  }
+  .about-film-main figcaption {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+  .about-film-seal > span {
+    font-size: 8px;
   }
   .about-film-seal svg {
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
   }
   .tatsuo-about-story {
     padding-block: 35px 55px;
@@ -1089,3 +1107,4 @@
 .about-location-list a:hover svg {
   transform: translate(3px, -3px);
 }
+
