@@ -2,33 +2,88 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Arrow, Asterisk } from "./icons";
 import MobileOptimizedImage from "./mobile-optimized-image";
 import { company, whatsapp } from "@/lib/company";
 
+const founderPrinciples = [
+  {
+    title: "Berkontribusi untuk negeri.",
+    text: "Berkontribusi pada kemajuan ekonomi nasional, dengan cita-cita jangka panjang untuk turut memberi manfaat bagi dunia.",
+  },
+  {
+    title: "Pelayanan prima untuk pelanggan.",
+    text: "Menempatkan kebutuhan pelanggan di pusat pelayanan dan setiap hubungan kerja sama.",
+  },
+  {
+    title: "Terus berkembang dan berbenah.",
+    text: "Menjadikan perbaikan berkelanjutan sebagai kebiasaan, dari langkah kecil hingga kemajuan berikutnya.",
+  },
+];
 const missions = [
   {
-    title: "Menghadirkan bahan bermutu.",
-    text: "Menyediakan pilihan bahan pangan dengan perhatian pada kualitas produk konsumsi.",
+    title: "Distribusi bahan pangan berkualitas.",
+    text: "Menghadirkan bahan pilihan untuk kebutuhan dapur dan usaha kuliner.",
   },
   {
-    title: "Melayani dengan sepenuh hati.",
-    text: "Menempatkan kebutuhan pelanggan sebagai dasar pelayanan dan hubungan kerja sama.",
+    title: "Pelayanan dengan semangat PRIMA.",
+    text: "Memegang komitmen, mendengarkan kebutuhan, dan terus meningkatkan pelayanan.",
   },
   {
-    title: "Tumbuh dalam kemitraan.",
-    text: "Membangun ekosistem usaha yang baik dan berkelanjutan bersama mitra.",
+    title: "Kemitraan yang adil dan berkelanjutan.",
+    text: "Menjalankan bisnis secara fair untuk tumbuh bersama pelanggan, supplier, dan tim.",
   },
+];
+const kaizenSteps = [
+  ["Dengarkan", "Pengalaman pelanggan & supplier."],
+  ["Evaluasi", "Kenali ruang untuk berbenah."],
+  ["Perbaiki", "Mulai dari langkah kecil."],
+  ["Bertumbuh", "Bawa perbaikan ke langkah berikutnya."],
 ];
 const principles = [
-  ["Mutu", "Bahan yang baik adalah awal dari sajian yang baik."],
-  ["Komitmen", "Menjaga tanggung jawab dalam setiap hubungan usaha."],
-  ["Keterbukaan", "Berbisnis dengan adil dan komunikasi yang jelas."],
+  [
+    "P",
+    "Peduli",
+    "Memahami kebutuhan pelanggan dan memberi perhatian dalam setiap pelayanan.",
+  ],
+  [
+    "R",
+    "Respek",
+    "Menghargai setiap orang dan hubungan kerja sama yang terjalin.",
+  ],
+  [
+    "I",
+    "Integritas",
+    "Menjaga kejujuran, tanggung jawab, dan keselarasan antara ucapan dan tindakan.",
+  ],
+  [
+    "M",
+    "Mutu Terjamin",
+    "Menjaga kualitas bahan pangan yang kami hadirkan untuk dapur Anda.",
+  ],
+  [
+    "A",
+    "Aman Bertransaksi",
+    "Membangun kepercayaan melalui proses transaksi yang jelas dan terbuka.",
+  ],
+];
+const peoplePrinciples = [
+  [
+    "SDM unggul",
+    "Bakat terbaik di tempat yang sesuai, dengan penghargaan dan tindakan tegas yang adil bagi setiap individu.",
+  ],
+  [
+    "Peningkatan nilai",
+    "Mengembangkan individu yang berpengaruh dan bernilai, menjaga arus kas, serta memperkuat struktur bisnis.",
+  ],
+  ["Komitmen kerja", "Selalu PRIMA dalam setiap pelayanan dan kinerja tim."],
 ];
 const partners = [
+  ["Aerofood ACS — Garuda Indonesia Group", "aerofood-acs"],
+  ["Waroeng Steak & Shake", "waroeng-steak"],
   ["Kanzler", "kanzler"],
   ["Mie Gacoan", "mie-gacoan"],
   ["Waroeng SS", "waroeng-ss"],
