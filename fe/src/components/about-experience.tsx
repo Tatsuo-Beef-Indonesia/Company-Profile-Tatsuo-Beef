@@ -92,6 +92,20 @@ const partners = [
   ["Bale Bebakaran", "bale-bebakaran"],
 ];
 
+function AboutDragon({ variant }: { variant: "kaizen" | "prima" }) {
+  return (
+    <span className={`about-dragon about-dragon-${variant}`} aria-hidden="true">
+      <Image
+        src="/images/about-dragon-gold-v1.webp"
+        alt=""
+        width={1086}
+        height={1448}
+        sizes="(max-width: 760px) 110vw, 70vw"
+      />
+    </span>
+  );
+}
+
 export default function AboutExperience() {
   const root = useRef<HTMLElement>(null);
   const [activePrima, setActivePrima] = useState(0);
@@ -289,6 +303,24 @@ export default function AboutExperience() {
               );
             });
           const kaizen = element.querySelector(".tatsuo-about-kaizen")!;
+          gsap.utils
+            .toArray<HTMLElement>(".about-dragon")
+            .forEach((ornament) => {
+              gsap.fromTo(
+                ornament.querySelector("img"),
+                { y: mobile ? -20 : -45 },
+                {
+                  y: mobile ? 20 : 65,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: ornament.parentElement,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                  },
+                },
+              );
+            });
           reveal(
             kaizen.querySelectorAll(
               ".tatsuo-about-kaizen-signature > :not(.about-kaizen-kanji)",
@@ -568,6 +600,7 @@ export default function AboutExperience() {
           </div>
         </div>
         <div className="container tatsuo-about-kaizen">
+          <AboutDragon variant="kaizen" />
           <div className="tatsuo-about-kaizen-signature">
             <span className="tatsuo-about-label">02 / SEMANGAT KAIZEN</span>
             <span className="about-kaizen-kanji" lang="ja" aria-hidden="true">
@@ -703,6 +736,7 @@ export default function AboutExperience() {
         className="tatsuo-about-principles"
         aria-labelledby="about-values-heading"
       >
+        <AboutDragon variant="prima" />
         <div className="container about-prima-layout">
           <header className="about-prima-sticky">
             <span className="tatsuo-about-label">05 / NILAI PERUSAHAAN</span>
