@@ -87,6 +87,27 @@ export default function LandingHero({
           },
         );
       });
+      media.add("(min-width: 761px) and (max-width: 1150px)", () => {
+        if (!introReady) return;
+        const reduced = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        gsap.fromTo(
+          ".hero-kaizen",
+          { autoAlpha: 1 },
+          {
+            autoAlpha: 0,
+            immediateRender: false,
+            ease: "none",
+            duration: reduced ? 0 : 1,
+            scrollTrigger: {
+              start: 0,
+              end: reduced ? 1 : 40,
+              scrub: true,
+            },
+          },
+        );
+      });
     }, root);
     return () => {
       headerObserver.disconnect();
