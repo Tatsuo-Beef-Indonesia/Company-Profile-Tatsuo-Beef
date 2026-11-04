@@ -49,8 +49,12 @@ for file in .env .env.local .env.production .env.production.local; do
   if [[ -f "$app/$file" ]]; then cp "$app/$file" "$candidate/$file"; fi
 done
 cd "$candidate"
-npm ci --include=dev
-npm run build
+# CloudLinux's npm wrapper can redirect installs into the application's shared
+# virtual environment. Use the runtime's npm so each release owns its modules.
+npm_bin="$(dirname "$(node -p 'process.execPath')")/npm"
+test -x "$npm_bin"
+"$npm_bin" ci --include=dev
+"$npm_bin" run build
 test -s .next/BUILD_ID
 printf '%s\n' "$sha" > .release-id
 
