@@ -94,6 +94,7 @@ const partners = [
 
 export default function AboutExperience() {
   const root = useRef<HTMLElement>(null);
+  const [activePrima, setActivePrima] = useState(0);
   useEffect(() => {
     const element = root.current;
     if (!element) return;
@@ -107,6 +108,18 @@ export default function AboutExperience() {
           desktop: "(min-width: 761px)",
         },
         (match) => {
+          // Reading state also works when the user prefers reduced motion.
+          gsap.utils
+            .toArray<HTMLElement>(".tatsuo-about-principle")
+            .forEach((row, index) => {
+              ScrollTrigger.create({
+                trigger: row,
+                start: "top 58%",
+                end: "bottom 58%",
+                onEnter: () => setActivePrima(index),
+                onEnterBack: () => setActivePrima(index),
+              });
+            });
           if (!match.conditions?.motion) return;
           const mobile = Boolean(match.conditions.mobile);
           const reveal = (
@@ -257,9 +270,7 @@ export default function AboutExperience() {
           const vision = element.querySelector(".tatsuo-about-vision")!;
           reveal(vision.querySelectorAll(".tatsuo-about-label, p"), vision);
           gsap.utils
-            .toArray<HTMLElement>(
-              ".tatsuo-about-mission, .tatsuo-about-principle",
-            )
+            .toArray<HTMLElement>(".tatsuo-about-mission")
             .forEach((row) => {
               reveal(row.children, row);
               gsap.fromTo(
@@ -277,6 +288,76 @@ export default function AboutExperience() {
                 },
               );
             });
+          const kaizen = element.querySelector(".tatsuo-about-kaizen")!;
+          reveal(
+            kaizen.querySelectorAll(
+              ".tatsuo-about-kaizen-signature > :not(.about-kaizen-kanji)",
+            ),
+            kaizen,
+          );
+          reveal(
+            kaizen.querySelectorAll(".tatsuo-about-kaizen-story > *"),
+            kaizen,
+          );
+          const workflow = element.querySelector(".about-kaizen-workflow")!;
+          reveal(workflow.children, workflow, { stagger: 0.12 });
+          const founders = element.querySelector(".about-founder-note")!;
+          reveal(founders.querySelectorAll("article"), founders);
+          gsap.utils
+            .toArray<HTMLElement>(".about-kaizen-photo, .about-people-photo")
+            .forEach((frame) => {
+              gsap.fromTo(
+                frame.querySelector("img"),
+                { yPercent: -6, scale: 1.2 },
+                {
+                  yPercent: 6,
+                  scale: 1.16,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: frame,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                  },
+                },
+              );
+            });
+          gsap.fromTo(
+            ".about-kaizen-kanji",
+            { y: 40, rotation: -5 },
+            {
+              y: -35,
+              rotation: 3,
+              ease: "none",
+              scrollTrigger: {
+                trigger: kaizen,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+              },
+            },
+          );
+          gsap.utils
+            .toArray<HTMLElement>(".tatsuo-about-principle")
+            .forEach((row) => {
+              reveal(row.querySelector(".about-prima-value-copy"), row);
+              gsap.fromTo(
+                row.querySelector(".tatsuo-about-prima-letter"),
+                { yPercent: 12 },
+                {
+                  yPercent: -12,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: row,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                  },
+                },
+              );
+            });
+          const people = element.querySelector(".tatsuo-about-people-grid")!;
+          reveal(people.children, people);
           const documentCard = element.querySelector(
             ".tatsuo-about-halal-document",
           )!;
