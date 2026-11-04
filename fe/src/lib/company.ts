@@ -36,7 +36,7 @@ export const company = {
   sales: [
     {
       name: "Izzud",
-      role: "Owner",
+      role: "Sales",
       phone: "0812 7487 7474",
       number: "6281274877474",
     },
