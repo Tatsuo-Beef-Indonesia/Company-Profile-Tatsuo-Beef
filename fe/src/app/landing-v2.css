@@ -20,6 +20,35 @@
   display: flow-root;
   background: transparent;
 }
+.hero-kaizen {
+  position: absolute;
+  z-index: 2;
+  left: clamp(12px, 2vw, 32px);
+  top: 40%;
+  transform: translateY(-50%);
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif CJK JP", serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  line-height: 1;
+  color: #f4f0e799;
+  pointer-events: none;
+}
+.home-v2[data-intro="loading"] .hero-kaizen {
+  visibility: hidden;
+}
+@media (max-width: 760px) {
+  .hero-kaizen {
+    left: 6px;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    color: #f4f0e780;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .home-v2 .v2-original-hero {
     position: relative;
