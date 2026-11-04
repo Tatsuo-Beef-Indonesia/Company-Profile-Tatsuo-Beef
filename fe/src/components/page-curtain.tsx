@@ -32,10 +32,12 @@ export default function PageCurtain({ pathname, busy, onBusyChange }: Props) {
     let timeout: ReturnType<typeof setTimeout> | undefined;
     let frame = 0;
     let lastPath = window.location.pathname;
+    let pendingHref: string | null = null;
     const html = document.documentElement;
 
     const unlock = () => {
       phase = "idle";
+      pendingHref = null;
       element.dataset.active = "false";
       delete html.dataset.pageTransition;
       onBusyChange(false);
@@ -100,7 +102,19 @@ export default function PageCurtain({ pathname, busy, onBusyChange }: Props) {
         capture: true,
       });
       if (timeout) clearTimeout(timeout);
-      timeout = setTimeout(reveal, 6500);
+      timeout = setTimeout(() => {
+        // A stalled client navigation must reach its destination, rather than
+        // uncovering the previous page again (for example after a deployment).
+        if (
+          pendingHref &&
+          window.location.pathname !==
+            new URL(pendingHref, window.location.href).pathname
+        ) {
+          window.location.assign(pendingHref);
+          return;
+        }
+        reveal();
+      }, 6500);
     };
     routeArrived.current = () => {
       lastPath = window.location.pathname;
@@ -146,9 +160,15 @@ export default function PageCurtain({ pathname, busy, onBusyChange }: Props) {
         return;
       }
       phase = "closing";
+      pendingHref = target.pathname + target.search + target.hash;
       cover();
       const href = target.pathname + target.search + target.hash;
-      router.prefetch(href);
+      // Prefetching is optional; failure must not stop the actual navigation.
+      try {
+        router.prefetch(href);
+      } catch {
+        // Next Link may already have prefetched this route.
+      }
       timeline?.kill();
       gsap.set(brand, { opacity: 0, y: 8 });
       timeline = gsap.timeline({
@@ -158,7 +178,7 @@ export default function PageCurtain({ pathname, busy, onBusyChange }: Props) {
           try {
             router.push(href);
           } catch {
-            reveal();
+            window.location.assign(href);
           }
         },
       });
@@ -179,6 +199,7 @@ export default function PageCurtain({ pathname, busy, onBusyChange }: Props) {
       timeline?.kill();
       cancelAnimationFrame(frame);
       phase = "waiting";
+      pendingHref = null;
       cover();
       gsap.set([left, right], { xPercent: 0 });
       gsap.set(brand, { opacity: 1, y: 0 });

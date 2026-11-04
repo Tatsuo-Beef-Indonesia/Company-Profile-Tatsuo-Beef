@@ -590,8 +590,8 @@ export default function AboutExperience() {
           <MobileOptimizedImage
             src="/images/craft-butcher-hands-v1.webp"
             alt="Ilustrasi ketelitian dalam menyiapkan potongan daging"
-            width={1600}
-            height={1000}
+            width={1672}
+            height={941}
             sizes="100vw"
           />
           <div className="container about-kaizen-photo-caption">
@@ -808,8 +808,8 @@ export default function AboutExperience() {
           <MobileOptimizedImage
             src="/images/craft-chef-plating-v1.webp"
             alt="Ilustrasi ketelitian dan keterampilan dalam menyajikan makanan"
-            width={1200}
-            height={1500}
+            width={1672}
+            height={941}
             sizes="(max-width: 760px) 100vw, 42vw"
           />
           <figcaption>
