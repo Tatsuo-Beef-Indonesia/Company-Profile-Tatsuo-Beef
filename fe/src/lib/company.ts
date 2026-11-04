@@ -46,6 +46,18 @@ export const company = {
       phone: "0813 3027 3323",
       number: "6281330273323",
     },
+    {
+      name: "Yatno",
+      role: "Sales",
+      phone: "0831 6278 0814",
+      number: "6283162780814",
+    },
+    {
+      name: "Imron",
+      role: "Sales Jakarta",
+      phone: "0812 9450 6900",
+      number: "6281294506900",
+    },
   ],
 };
 export const whatsapp = (
