@@ -638,13 +638,14 @@ export default function AboutExperience() {
       >
         <div className="container">
           <div className="tatsuo-about-vision tatsuo-about-reveal">
-            <span className="tatsuo-about-label">02 / VISI KAMI</span>
+            <span className="tatsuo-about-label">03 / VISI KAMI</span>
             <Asterisk />
+            <span className="about-vision-caption">TUJUAN YANG KAMI TUJU</span>
             <h2
               id="about-vision-heading"
-              aria-label="Menjadi pilihan terdepan untuk bahan pangan bermutu dan pelayanan yang berarti."
+              aria-label="Menjadi perusahaan terdepan dalam distribusi bahan pangan berkualitas dan terbaik dalam pelayanan."
             >
-              {"Menjadi pilihan terdepan untuk bahan pangan bermutu dan pelayanan yang berarti."
+              {"Menjadi perusahaan terdepan dalam distribusi bahan pangan berkualitas dan terbaik dalam pelayanan."
                 .split(" ")
                 .map((word, index) => (
                   <span
@@ -661,30 +662,39 @@ export default function AboutExperience() {
               bekerja setiap hari.
             </p>
           </div>
-          <div className="tatsuo-about-missions">
-            <div className="tatsuo-about-reveal">
-              <span className="tatsuo-about-label">MISI KAMI</span>
-              <h3>
-                Untuk sampai ke sana,
-                <br />
-                <em>ini langkah kami.</em>
-              </h3>
-            </div>
-            <div>
-              {missions.map((item, index) => (
-                <article
-                  className="tatsuo-about-mission tatsuo-about-reveal"
-                  key={item.title}
-                >
-                  <span>0{index + 1}</span>
-                  <div>
-                    <h4>{item.title}</h4>
-                    <p>{item.text}</p>
-                  </div>
-                  <Arrow diagonal />
-                </article>
-              ))}
-            </div>
+        </div>
+      </section>
+      <section
+        className="about-mission-chapter"
+        aria-labelledby="about-mission-heading"
+      >
+        <div className="container tatsuo-about-missions">
+          <div className="tatsuo-about-reveal">
+            <span className="tatsuo-about-label">04 / MISI KAMI</span>
+            <h3 id="about-mission-heading">
+              Langkah nyata.
+              <br />
+              <em>Setiap hari.</em>
+            </h3>
+            <p className="about-mission-intro">
+              Cara kami membawa visi menjadi pelayanan dan kemitraan yang
+              berarti.
+            </p>
+          </div>
+          <div>
+            {missions.map((item, index) => (
+              <article
+                className="tatsuo-about-mission tatsuo-about-reveal"
+                key={item.title}
+              >
+                <span>0{index + 1}</span>
+                <div>
+                  <h4>{item.title}</h4>
+                  <p>{item.text}</p>
+                </div>
+                <Arrow diagonal />
+              </article>
+            ))}
           </div>
         </div>
       </section>
