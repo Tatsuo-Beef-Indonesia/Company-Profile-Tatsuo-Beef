@@ -1,6 +1,10 @@
 export const company = {
   name: "PT. Tatsuo Beef Indonesia",
   email: "tatsuobeefindonesia@gmail.com",
+  halal: {
+    certificateId: "ID33210029677961025",
+    certificateImage: "/images/tatsuo-halal-certificate-full.webp",
+  },
   locations: {
     solo: {
       city: "Solo",
