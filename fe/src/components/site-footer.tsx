@@ -101,7 +101,7 @@ export default function SiteFooter() {
             </div>
           </div>
           <div className="footer-contact-details">
-            <div className="footer-contact-item">
+            <div className="footer-contact-item footer-phones">
               <ContactIcon type="phone" />
               <div>
                 <h3>Telepon</h3>
@@ -120,14 +120,14 @@ export default function SiteFooter() {
                 ))}
               </div>
             </div>
-            <div className="footer-contact-item">
+            <div className="footer-contact-item footer-email">
               <ContactIcon type="email" />
               <div>
                 <h3>Email</h3>
                 <a href={`mailto:${company.email}`}>{company.email}</a>
               </div>
             </div>
-            <div className="footer-contact-item">
+            <div className="footer-contact-item footer-locations">
               <ContactIcon type="location" />
               <div>
                 <h3>Temukan Kami</h3>
