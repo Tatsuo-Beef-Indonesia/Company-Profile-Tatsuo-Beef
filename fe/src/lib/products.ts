@@ -110,6 +110,7 @@ export const products: Product[] = [
     "Sliced selection",
     "Sirloin dalam bentuk irisan yang fleksibel untuk kebutuhan menu harian restoran. Sesuaikan penggunaan dengan karakter masakan dan porsi sajian Anda.",
     ["Rice bowl", "Grill", "Tumis"],
+    "/images/catalog/slice-sirloin-lean-ai-v2.webp",
   ),
   beef(
     "shortplate-beef",
