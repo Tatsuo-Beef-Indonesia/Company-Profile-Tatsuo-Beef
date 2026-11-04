@@ -46,7 +46,7 @@ export const company = {
     },
     {
       name: "Kriss",
-      role: "Tim Sales",
+      role: "Sales",
       phone: "0813 3027 3323",
       number: "6281330273323",
     },
@@ -58,7 +58,7 @@ export const company = {
     },
     {
       name: "Imron",
-      role: "Sales Jakarta",
+      role: "Sales",
       phone: "0812 9450 6900",
       number: "6281294506900",
     },

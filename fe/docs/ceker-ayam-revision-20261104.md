@@ -1,0 +1,14 @@
+# Boneless chicken feet — client reference revision
+
+The client rejected the broad flat skin-like first revision and oversized open-foot second revision, then supplied a clearer photo with a container and wooden plate of compact folded boneless feet. The latest image follows that reference: smaller irregular pieces, curled toes and a natural overlapping arrangement, with a changed camera angle and charcoal slate. This is AI-generated reference-based imagery, not a photograph of actual stock.
+
+- Tool: built-in imagegen.
+- Final asset: `public/images/catalog/ceker-ayam-tanpa-tulang-ai-v4.webp`, 1000 × 1000, quality 88.
+- The prior production URL `public/images/catalog/ceker-ayam-tanpa-tulang-ai.webp` serves identical new bytes for cached pages.
+- Product data uses the versioned asset to avoid stale image caches.
+- The uncommitted rejected v3 asset was removed; generation originals remain outside the repository.
+- The client approved this revision for publication.
+
+## Final generation prompt
+
+Use case: product-mockup. Recreate the prepared boneless chicken feet PRODUCT morphology from the provided photograph, especially the small folded pieces in the LEFT rectangular container and curled toes on the RIGHT wooden plate. Produce ONE square premium catalog photograph, not a diptych. The supplied image is the sole primary product reference: preserve the characteristic compact, slender, wrinkled, irregular, already-deboned feet. Many pieces have three short narrow toes folded together inward alongside a small collapsed foot pad, some are upside-down, some show narrow lengthwise deboning slits. These are SMALL, lean, limp folded chicken feet, not huge flat hands. Crucial: do not make broad flat triangular skin webs or fan-shaped sheets; do not arrange five large open feet on top; do not depict thick inflated fingers or overly regular repeated three-toe shapes. Each foot occupies only about 1/5 to 1/6 the tray width, with roughly 20–25 small compact feet naturally overlapping in a modest mound. Maintain pale ivory with a slight subdued pink undertone as in the reference, fine natural segmented skin texture and subtle moisture, not orange and not glossy plastic. Place the product in a plain clean shallow WHITE RECTANGULAR FOOD TRAY on dark charcoal textured slate, matching a premium raw-food catalog. Whole tray visible with margins. Camera elevated approximately 55 degrees above tabletop, front and side rim subtly visible; arrange tray diagonally by about 10 degrees. Soft diffused upper-left light, natural realistic shadows, crisp photography with honest organic imperfections. NO bones, NO toenails, NO plastic wrap, NO garnish, NO utensils, NO text, NO logo, NO watermark, NO other containers, NO white tabletop. Opaque background. Use a new natural arrangement faithful to the reference, not the anatomy of a whole unde-boned chicken foot.

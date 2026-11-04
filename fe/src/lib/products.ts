@@ -324,7 +324,7 @@ export const products: Product[] = [
     "Ceker Ayam Tanpa Tulang",
     "Ceker ayam tanpa tulang untuk aneka kreasi menu berbumbu. Praktis diolah menjadi sajian pedas, dimsum, maupun tumisan sesuai kebutuhan dapur Anda.",
     ["Dimsum", "Tumis", "Sajian pedas"],
-    "/images/catalog/ceker-ayam-tanpa-tulang-ai.webp",
+    "/images/catalog/ceker-ayam-tanpa-tulang-ai-v4.webp",
   ),
   seafood(
     "salmon-fillet",
