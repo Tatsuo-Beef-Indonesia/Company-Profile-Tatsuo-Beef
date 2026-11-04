@@ -1,0 +1,164 @@
+/* A continuous editorial story: craft, intention, action, values, proof. */
+.about-kaizen-chapter {
+  position: relative;
+}
+.about-kaizen-photo {
+  position: relative;
+  height: clamp(340px, 65svh, 720px);
+  overflow: clip;
+  isolation: isolate;
+  background: #27251f;
+}
+.about-kaizen-photo > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.about-kaizen-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 55%, #171a16a6);
+  pointer-events: none;
+}
+.about-kaizen-photo-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff3e0;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+}
+.tatsuo-about-kaizen {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  padding-block: 100px 80px;
+  margin-bottom: 0;
+  gap: 70px 10%;
+  border: 0;
+}
+.tatsuo-about-kaizen-signature {
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  padding: 0;
+}
+.about-kaizen-kanji {
+  position: absolute;
+  z-index: -1;
+  top: -80px;
+  left: -20px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(130px, 15vw, 240px);
+  letter-spacing: -0.1em;
+  color: #ac252b0d;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.tatsuo-about-kaizen h2 {
+  font-size: clamp(24px, 2.7vw, 40px);
+  margin-top: 35px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.tatsuo-about-kaizen-translation {
+  margin-top: 40px;
+  max-width: 360px;
+  font-size: clamp(30px, 3.1vw, 47px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+.tatsuo-about-kaizen-story h3 {
+  font-size: clamp(55px, 6.1vw, 90px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+.tatsuo-about-kaizen-story h3 em {
+  color: var(--red);
+  font-style: normal;
+}
+.tatsuo-about-kaizen-story p {
+  max-width: 440px;
+  font-size: 14px;
+}
+.about-kaizen-workflow {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+.about-kaizen-workflow li {
+  position: relative;
+  padding: 20px 0 0;
+  border-top: 1px solid #ac252b55;
+}
+.about-kaizen-workflow li > span {
+  font-size: 11px;
+  color: var(--red);
+}
+.about-kaizen-workflow h4 {
+  margin-top: 23px;
+  font-family: var(--font-editorial), serif;
+  font-size: clamp(23px, 2.5vw, 37px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+.about-kaizen-workflow p {
+  margin-top: 12px;
+  color: #746859;
+  font-size: 12px;
+  line-height: 1.8;
+  padding-right: 15px;
+}
+.about-kaizen-workflow svg {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  color: var(--red);
+}
+.about-founder-note {
+  grid-column: 1 / -1;
+  border-top: 1px solid #c9bca9;
+  padding-top: 25px;
+}
+.about-founder-note > .tatsuo-about-label {
+  font-size: 10px;
+}
+.about-founder-note > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 28px;
+}
+.about-founder-note article > span {
+  color: var(--red);
+  font-size: 10px;
+}
+.about-founder-note h3 {
+  max-width: 280px;
+  font-family: var(--font-editorial), serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 12px;
+}
+.about-founder-note p {
+  font-size: 12px;
+  line-height: 1.85;
+  color: #746859;
+  margin-top: 12px;
+  max-width: 340px;
+}
