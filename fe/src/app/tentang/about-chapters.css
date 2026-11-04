@@ -162,3 +162,90 @@
   margin-top: 12px;
   max-width: 340px;
 }
+/* Vision is the destination. Mission is deliberately a separate chapter. */
+.tatsuo-about-purpose {
+  color: var(--ink);
+  background: #eee8dc var(--about-grain);
+  padding-block: 90px;
+}
+.tatsuo-about-purpose .tatsuo-about-label {
+  color: var(--red);
+}
+.tatsuo-about-vision {
+  grid-template-columns: 1fr auto;
+  padding: 0;
+}
+.tatsuo-about-vision > svg {
+  color: var(--red);
+  width: 60px;
+  height: 60px;
+}
+.about-vision-caption {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #746859;
+}
+.tatsuo-about-vision h2 {
+  font-size: clamp(43px, 5.2vw, 78px);
+  max-width: 1120px;
+  line-height: 1.15;
+  margin-top: 22px;
+  letter-spacing: -0.045em;
+}
+.tatsuo-about-vision > p {
+  color: #746859;
+  font-size: 13px;
+  max-width: 350px;
+  margin-top: 35px;
+}
+.about-mission-chapter {
+  padding-block: 80px 95px;
+  background: var(--about-paper) var(--about-grain);
+}
+.about-mission-chapter .tatsuo-about-missions {
+  border-top: 0;
+  padding-top: 0;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 10%;
+  align-items: start;
+}
+.about-mission-chapter h3 {
+  font-size: clamp(42px, 4.4vw, 67px);
+}
+.about-mission-chapter h3 em {
+  color: var(--red);
+}
+.about-mission-intro {
+  max-width: 280px;
+  margin-top: 25px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #746859;
+}
+.about-mission-chapter .tatsuo-about-mission {
+  grid-template-columns: 35px 1fr 18px;
+  gap: 20px;
+  padding-block: 28px;
+}
+.about-mission-chapter .tatsuo-about-mission:first-child {
+  padding-top: 0;
+}
+.about-mission-chapter .tatsuo-about-mission::after {
+  background: #c9bca9;
+}
+.about-mission-chapter .tatsuo-about-mission > span,
+.about-mission-chapter .tatsuo-about-mission > svg {
+  color: var(--red);
+}
+.about-mission-chapter .tatsuo-about-mission > span {
+  font-size: 28px;
+}
+.about-mission-chapter .tatsuo-about-mission h4 {
+  font-size: clamp(25px, 2.5vw, 37px);
+}
+.about-mission-chapter .tatsuo-about-mission p {
+  color: #746859;
+  font-size: 13px;
+}
